@@ -22,6 +22,7 @@ class Color(models.Model):
 class PartInstance(models.Model): # existant part in specific color aka Code
     color = models.ForeignKey('Color')
     part = models.ForeignKey('Part')
+    user_override = models.BooleanField(default=False) # for if the user wants to enter something we don't have stored
     
 class Set(models.Model):
     # TODO stores (PartInstance, number in set) in some form - JSON??
