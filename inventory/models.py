@@ -2,7 +2,7 @@ from django.db import models
 
 # "Reference" tables
 class Part(models.Model):
-    id = models.CharField(max_length=32) # lego product code, TODO check this doesn't conflict with Django stuff
+    part_id = models.CharField(max_length=32) # lego product code
     name = models.CharField(max_length=256) # descriptive name
     category = models.ForeignKey('Category') # eg brick, minifig head
 
@@ -26,7 +26,7 @@ class PartInstance(models.Model): # existant part in specific color aka Code
     
 class Set(models.Model):
     # TODO stores (PartInstance, number in set) in some form - JSON??
-    id = models.CharField(max_length=32) # TODO check this doesn't conflict with Django stuff
+    set_id = models.CharField(max_length=32)
     name = models.CharField(max_length=256)
     year = models.IntegerField()
     
@@ -47,6 +47,8 @@ class Keyword(models.Model):
     name = models.CharField(max_length=256)
 
 class KeywordValue(models.Model):
+    inventory = models.ForeignKey('Inventory')
+    keyword = models.ForeignKey('Keyword')
     value = models.CharField(max_length=256)
     deleted = models.BooleanField(default=False)
     
