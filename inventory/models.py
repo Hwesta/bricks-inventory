@@ -5,6 +5,10 @@ class Part(models.Model):
     part_id = models.CharField(max_length=32) # lego product code
     name = models.CharField(max_length=256) # descriptive name
     category = models.ForeignKey('Category') # eg brick, minifig head
+    weight = models.FloatField() 
+    x_dimension = models.FloatField()
+    y_dimension = models.FloatField()
+    z_dimension = models.FloatField()
 
 class Category(models.Model):
     # need way to populate this automatically based on what things are referenced
