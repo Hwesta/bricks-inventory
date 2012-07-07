@@ -21,7 +21,7 @@ class Category(models.Model):
     name = models.CharField(max_length=200)
 
     def __unicode__(self):
-        return self.category_id+"-"+self.name
+        return unicode(self.category_id)+"-"+self.name
 
 class Color(models.Model):
     color_id = models.IntegerField(unique=True)
@@ -32,7 +32,7 @@ class Color(models.Model):
     year_to = models.IntegerField(null=True, blank=True)
 
     def __unicode__(self):
-        return self.color_id+"-"+self.name
+        return unicode(self.color_id)+"-"+self.name
 
 class PartInstance(models.Model): # existant part in specific color aka Code
     color = models.ForeignKey('Color', to_field='color_id')
@@ -62,7 +62,7 @@ class Inventory(models.Model):
     deleted = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return self.count+"x"+self.partinstance
+        return unicode(self.count)+"x"+self.partinstance
 
 class Location(models.Model):
     pass
