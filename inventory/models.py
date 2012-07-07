@@ -2,31 +2,33 @@ from django.db import models
 
 # "Reference" tables
 class Part(models.Model):
-    part_id = models.CharField(max_length=32) # lego product code
+    part_id = models.CharField(max_length=32, unique=True) # lego product code
     name = models.CharField(max_length=256) # descriptive name
-    category = models.ForeignKey('Category') # eg brick, minifig head
-    weight = models.FloatField() 
-    x_dimension = models.FloatField()
-    y_dimension = models.FloatField()
-    z_dimension = models.FloatField()
+    category = models.ForeignKey('Category', to_field='category_id') # eg brick, minifig head
+    weight = models.FloatField(null=True, blank=True) 
+    x_dimension = models.FloatField(null=True, blank=True)
+    y_dimension = models.FloatField(null=True, blank=True)
+    z_dimension = models.FloatField(null=True, blank=True)
 
 class Category(models.Model):
     # need way to populate this automatically based on what things are referenced
     # in parts initial data
     # NOTE may need split into PartCategory and SetCategory
-    id = models.IntegerField(primary_key=True)
+    category_id = models.IntegerField(unique=True)
     name = models.CharField(max_length=200)
 
 class Color(models.Model):
+    color_id = models.IntegerField(unique=True)
     name = models.CharField(max_length=200)
-    rgb = models.IntegerField() # should be hex rgb value
+    rgb = models.CharField(max_length=6) # should be hex rgb value
     color_type = models.CharField(max_length=64)
-    year_from = models.IntegerField()
-    year_to = models.IntegerField()
+    year_from = models.IntegerField(null=True, blank=True)
+    year_to = models.IntegerField(null=True, blank=True)
 
 class PartInstance(models.Model): # existant part in specific color aka Code
-    color = models.ForeignKey('Color')
-    part = models.ForeignKey('Part')
+    color = models.ForeignKey('Color', to_field='color_id')
+    part = models.ForeignKey('Part', to_field='part_id')
+    codename = models.CharField(max_length=255)
     user_override = models.BooleanField(default=False) # for if the user wants to enter something we don't have stored
     
 class Set(models.Model):
