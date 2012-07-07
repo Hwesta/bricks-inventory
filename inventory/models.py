@@ -10,12 +10,18 @@ class Part(models.Model):
     y_dimension = models.FloatField(null=True, blank=True)
     z_dimension = models.FloatField(null=True, blank=True)
 
+    def __unicode__(self):
+        return self.part_id+"-"+self.name
+
 class Category(models.Model):
     # need way to populate this automatically based on what things are referenced
     # in parts initial data
     # NOTE may need split into PartCategory and SetCategory
     category_id = models.IntegerField(unique=True)
     name = models.CharField(max_length=200)
+
+    def __unicode__(self):
+        return self.category_id+"-"+self.name
 
 class Color(models.Model):
     color_id = models.IntegerField(unique=True)
@@ -25,11 +31,17 @@ class Color(models.Model):
     year_from = models.IntegerField(null=True, blank=True)
     year_to = models.IntegerField(null=True, blank=True)
 
+    def __unicode__(self):
+        return self.color_id+"-"+self.name
+
 class PartInstance(models.Model): # existant part in specific color aka Code
     color = models.ForeignKey('Color', to_field='color_id')
     part = models.ForeignKey('Part', to_field='part_id')
     codename = models.CharField(max_length=255)
     user_override = models.BooleanField(default=False) # for if the user wants to enter something we don't have stored
+
+    def __unicode__(self):
+        return part.name+"("+color.name+")"
     
 class Set(models.Model):
     # TODO stores (PartInstance, number in set) in some form - JSON??
@@ -37,6 +49,8 @@ class Set(models.Model):
     name = models.CharField(max_length=256)
     year = models.IntegerField()
     
+    def __unicode__(self):
+        return self.set_id+"-"+self.name
 
 # Actual inventory tables
     
@@ -47,17 +61,26 @@ class Inventory(models.Model):
     keywords = models.ManyToManyField('Keyword', through='KeywordValue')
     deleted = models.BooleanField(default=False)
 
+    def __unicode__(self):
+        return self.count+"x"+self.partinstance
+
 class Location(models.Model):
     pass
 
 class Keyword(models.Model):
     name = models.CharField(max_length=256)
 
+    def __unicode__(self):
+        return self.name
+
 class KeywordValue(models.Model):
     inventory = models.ForeignKey('Inventory')
     keyword = models.ForeignKey('Keyword')
     value = models.CharField(max_length=256)
     deleted = models.BooleanField(default=False)
+
+    def __unicode__(self):
+        return self.inventory+" "+self.keyword+" "+self.value
     
 
 
