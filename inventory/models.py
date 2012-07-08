@@ -62,10 +62,14 @@ class Inventory(models.Model):
     deleted = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return unicode(self.count)+"x"+self.partinstance
+        return unicode(self.count)+"x"+unicode(self.partinstance)
 
 class Location(models.Model):
-    pass
+    name = models.CharField(max_length=256)
+    parent = models.ForeignKey('self', null=True, blank=True)
+
+    def __unicode__(self):
+        return self.name;
 
 class Keyword(models.Model):
     name = models.CharField(max_length=256)
