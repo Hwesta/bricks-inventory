@@ -4,7 +4,7 @@ from inventory.models import Part, Category, Color, PartInstance, Set
 from inventory.models import Inventory, Location, Keyword, KeywordValue
 
 
-# Form should enter 
+# Form should enter:
 # Color
 # PartNumber (goes to Part)
 # (add PartInstance automatically if not in there)
@@ -24,5 +24,4 @@ class InventoryForm(forms.Form):
         except:
             raise forms.ValidationError("Specified part does not exist")
         return data
-
 
