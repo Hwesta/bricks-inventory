@@ -1,1 +1,190 @@
-body { background-color: #ffffff; }
+/* CSS file */
+/* Colors in BC flag:
+ * Blue: #002B7F
+ * Red: #CE1126
+ * Yellow: #FFD600
+ */
+
+/* General styling */
+body {
+    color: #000000;
+    background-color: #f0f0ff;
+}
+
+p {
+    
+}
+
+a {
+    color: #CE1126;
+}
+h1 {
+    color: #002B7F;
+    border-bottom: 1px solid #002B7F;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin: auto;
+    width: 80%;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+table {
+    border-bottom: 1px solid #000;
+}
+
+th {
+    border-bottom: 1px solid #000000;
+}
+
+td {
+    padding: 0px .5em;
+}
+
+/* Layout */
+#header {
+    width: 99%;
+    color: #ffffff;
+    background-color: #002B7F;
+    text-align: center;
+    padding: .1em .5em;
+    margin: auto
+}
+
+#header a {
+    color: #ffffff;
+}
+
+/* Breadcrumbs styling based on http://css.maxdesign.com.au/listamatic/horizontal33.htm */
+#breadcrumbs {
+    font-size: .9em;
+    padding-bottom: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+#breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#breadcrumbs li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+#breadcrumbs li:before { content: "> "; }
+#breadcrumbs li:first-child:before { content: ""; }
+
+/* Base on code from CourSys stylesheets by Greg Baker et. al. */
+#actions {
+  border: 1px solid #002B7F;
+  float: right;
+  margin: 0 0 1em 1em;
+}
+#actions h2 {
+  background: #002B7F;
+  color: #ffffff;
+  padding: 3px 2em 3px 10px;
+  margin: 0;
+}
+#actions ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#actions ul li{
+}
+#actions li a {
+  background-color: #ffffff;
+  width: auto;
+  height: 1.7em;
+  line-height: 1.7em;
+  text-decoration: none;
+  text-indent: 0.8em;
+  display: block;
+}
+#actions li a:hover {
+  background-color: #EAF2FA;
+  color: #002B7F;
+  text-decoration: none;
+}
+
+div#messages {
+    border: 1px solid #002B7F;
+    padding: 0.5em;
+    color: #002B7F;
+    background-color: #f0f0ff;
+    margin-bottom: 1em;
+}
+
+#messages ul {
+    padding: 0;
+    margin: 0;
+    list-style-position:inside;
+}
+#messages.success {
+    border: 1px solid #007F2B;
+    background-color: #f0fff0;
+    color: #007F2B;
+}
+#messages.error {
+    color: #CE1126;
+    border-color: #CE1126;
+    background-color: #fff0f0;
+}
+#messages.info {
+    color: #002B7F;
+    background-color: #f0f0ff;
+}
+
+/* End stuff from CourSys */
+
+.errorlist {
+    border: 1px solid #002B7F;
+    padding: 0.5em;
+    color: #002B7F;
+    background-color: #f0f0ff;
+    margin-bottom: 1em;
+    list-style-position:inside;
+    color: #CE1126;
+    border-color: #CE1126;
+    background-color: #fff0f0;
+}
+
+#main {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #002B7F;
+    background-color: #ffffff;
+    min-height: 200px;
+}
+
+#footer {
+    font-size: .9em;
+    width: 80%;
+    border: 1px solid #002B7F;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.helptext {
+    font-size: .8em;
+    display: block;
+    padding-left: .5em;
+}
+
+/* Page specific styling */
+
+.minor_th {
+    border: none;
+}
+
+
+

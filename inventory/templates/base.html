@@ -1,0 +1,47 @@
+{% load form_display %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}BRICKS inventory{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+</head>
+
+<body>
+
+<div id="header">HEADER</div>
+
+<h1>{% block h1 %}LEGO Inventory{% endblock %}</h1>
+
+<div id="breadcrumbs">
+{% if user.is_authenticated %}
+    <ul>
+    {% block breadcrumbs %}
+        <li><a href="">Home</a></li>
+        {% block subbreadcrumbs %}
+        {% endblock subbreadcrumbs %}
+    {% endblock breadcrumbs%}
+    </ul>
+{% endif %}
+</div>
+
+
+<div id="main">
+{% if messages %}
+    {% for message in messages %}
+    <div id="messages"{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+        {{ message|safe }}
+    </div>
+    {% endfor %}
+{% endif %}
+
+{% block menu %}{% endblock %}
+{% block content %}{% endblock %}
+</div>
+
+<div id="footer">
+    {% block footer %}Created by Holly Becker and Dale Floer.  Code Licensed <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL v2</a>{% endblock %}
+</div>
+
+</body>
+</html>

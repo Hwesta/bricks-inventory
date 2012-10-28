@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block h1 %}Add Inventory{% endblock %}
+
+{% block content %}
+
+<div id="form_container">
+    <form action="{% url inventory.views.add_inventory %}" method="post">
+        {% csrf_token %}
+        <fieldset>
+            <legend>General Info</legend>
+            {{ form.as_p }}
+        </fieldset>
+        <fieldset>
+            <legend>Location</legend>
+            {% for l in location_formset%}
+            {{ l }}
+            {% endfor %}
+        </fieldset>
+        <fieldset>
+            <legend>Keywords</legend>
+            {% for k in keywords_formset%}
+            {{ k }}
+            {% endfor %}
+        </fieldset>
+            <p>
+                <input  class="submit"  type="submit" value="Submit" />
+            </p>
+    </form>
+</div>
+
+{% endblock %}
+
