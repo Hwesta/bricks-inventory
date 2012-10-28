@@ -1,3 +1,7 @@
 {% extends "base.html" %}
 
 {% block h1 %}INDEX YAY!{% endblock %}
+
+{% block subbreadcrumbs %}
+<li><a href="{% url inventory.views.add_inventory %}">Add Inventory</a></li>
+{% endblock %}
