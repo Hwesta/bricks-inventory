@@ -37,7 +37,7 @@ class Color(models.Model):
 class PartInstance(models.Model): # existant part in specific color aka Code
     color = models.ForeignKey('Color', to_field='color_id')
     part = models.ForeignKey('Part', to_field='part_id')
-    codename = models.CharField(max_length=255)
+#    codename = models.CharField(max_length=255)
     user_override = models.BooleanField(default=False) # for if the user wants to enter something we don't have stored
 
     def __unicode__(self):
