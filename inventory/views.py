@@ -1,11 +1,12 @@
 # From Django (alphabetical)
 from django.contrib import messages
 from django.core.urlresolvers import reverse
+from django.forms.models import modelformset_factory
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
 # From Inventory
-from inventory.forms import InventoryForm
+from inventory.forms import InventoryForm, KeywordForm
 from inventory.models import Part, Category, Color, PartInstance, Set
 from inventory.models import Inventory, Location, Keyword, KeywordValue
 
@@ -18,6 +19,7 @@ def add_inventory(request):
         inventory_form = InventoryForm(request.POST, prefix="inv")
         #kw_form = KeywordForm(request.POST, prefix="kw")
         if inventory_form.is_valid():
+            # Is there an easier way to do this with an Inventory ModelForm?
             part_str = inventory_form.cleaned_data['part']
             color = inventory_form.cleaned_data['color']
             count = inventory_form.cleaned_data['count']
