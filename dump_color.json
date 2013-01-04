@@ -1,0 +1,1850 @@
+[
+    {
+        "pk": 1,
+        "model": "inventory.color",
+        "fields": {
+            "name": "(Not Applicable)",
+            "color_type": "N/A",
+            "year_from": 1954,
+            "color_id": 0,
+            "rgb": "",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 2,
+        "model": "inventory.color",
+        "fields": {
+            "name": "White",
+            "color_type": "Solid",
+            "year_from": 1950,
+            "color_id": 1,
+            "rgb": "FFFFFF",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 3,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Tan",
+            "color_type": "Solid",
+            "year_from": 1958,
+            "color_id": 2,
+            "rgb": "dec69c",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 4,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Yellow",
+            "color_type": "Solid",
+            "year_from": 1950,
+            "color_id": 3,
+            "rgb": "f7d117",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 5,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Orange",
+            "color_type": "Solid",
+            "year_from": 1993,
+            "color_id": 4,
+            "rgb": "FF7E14",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 6,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Red",
+            "color_type": "Solid",
+            "year_from": 1950,
+            "color_id": 5,
+            "rgb": "b30006",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 7,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Green",
+            "color_type": "Solid",
+            "year_from": 1950,
+            "color_id": 6,
+            "rgb": "00642e",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 8,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Blue",
+            "color_type": "Solid",
+            "year_from": 1950,
+            "color_id": 7,
+            "rgb": "0057a6",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 9,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Brown",
+            "color_type": "Solid",
+            "year_from": 1974,
+            "color_id": 8,
+            "rgb": "532115",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 10,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Gray",
+            "color_type": "Solid",
+            "year_from": 1954,
+            "color_id": 9,
+            "rgb": "9c9c9c",
+            "year_to": 2008
+        }
+    },
+    {
+        "pk": 11,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Gray",
+            "color_type": "Solid",
+            "year_from": 1961,
+            "color_id": 10,
+            "rgb": "6b5a5a",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 12,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Black",
+            "color_type": "Solid",
+            "year_from": 1957,
+            "color_id": 11,
+            "rgb": "212121",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 13,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Clear",
+            "color_type": "Transparent",
+            "year_from": 1950,
+            "color_id": 12,
+            "rgb": "EEEEEE",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 14,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Black",
+            "color_type": "Transparent",
+            "year_from": 1999,
+            "color_id": 13,
+            "rgb": "939484",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 15,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Dark Blue",
+            "color_type": "Transparent",
+            "year_from": 1978,
+            "color_id": 14,
+            "rgb": "00296B",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 16,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Light Blue",
+            "color_type": "Transparent",
+            "year_from": 1985,
+            "color_id": 15,
+            "rgb": "68BCC5",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 17,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Neon Green",
+            "color_type": "Transparent",
+            "year_from": 1990,
+            "color_id": 16,
+            "rgb": "C0F500",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 18,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Red",
+            "color_type": "Transparent",
+            "year_from": 1969,
+            "color_id": 17,
+            "rgb": "9C0010",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 19,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Neon Orange",
+            "color_type": "Transparent",
+            "year_from": 1993,
+            "color_id": 18,
+            "rgb": "FF4231",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 20,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Yellow",
+            "color_type": "Transparent",
+            "year_from": 1969,
+            "color_id": 19,
+            "rgb": "EBF72D",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 21,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Green",
+            "color_type": "Transparent",
+            "year_from": 1969,
+            "color_id": 20,
+            "rgb": "217625",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 22,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Chrome Gold",
+            "color_type": "Chrome",
+            "year_from": 1989,
+            "color_id": 21,
+            "rgb": "f1f2e1",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 23,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Chrome Silver",
+            "color_type": "Chrome",
+            "year_from": 1966,
+            "color_id": 22,
+            "rgb": "DCDCDC",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 24,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Pink",
+            "color_type": "Solid",
+            "year_from": 1991,
+            "color_id": 23,
+            "rgb": "FFC0CB",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 25,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Purple",
+            "color_type": "Solid",
+            "year_from": 1996,
+            "color_id": 24,
+            "rgb": "a5499c",
+            "year_to": 2008
+        }
+    },
+    {
+        "pk": 26,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Salmon",
+            "color_type": "Solid",
+            "year_from": 1997,
+            "color_id": 25,
+            "rgb": "f45c40",
+            "year_to": 2003
+        }
+    },
+    {
+        "pk": 27,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Salmon",
+            "color_type": "Solid",
+            "year_from": 1997,
+            "color_id": 26,
+            "rgb": "FFDEDC",
+            "year_to": 2004
+        }
+    },
+    {
+        "pk": 28,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Rust",
+            "color_type": "Solid",
+            "year_from": 1989,
+            "color_id": 27,
+            "rgb": "b52c20",
+            "year_to": 2001
+        }
+    },
+    {
+        "pk": 29,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Flesh",
+            "color_type": "Solid",
+            "year_from": 1979,
+            "color_id": 28,
+            "rgb": "CC8062",
+            "year_to": 2011
+        }
+    },
+    {
+        "pk": 30,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Earth Orange",
+            "color_type": "Solid",
+            "year_from": 1982,
+            "color_id": 29,
+            "rgb": "E6881D",
+            "year_to": 2008
+        }
+    },
+    {
+        "pk": 31,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Medium Orange",
+            "color_type": "Solid",
+            "year_from": 1950,
+            "color_id": 31,
+            "rgb": "FFA531",
+            "year_to": 2011
+        }
+    },
+    {
+        "pk": 32,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Orange",
+            "color_type": "Solid",
+            "year_from": 1998,
+            "color_id": 32,
+            "rgb": "f7ad63",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 33,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Yellow",
+            "color_type": "Solid",
+            "year_from": 1994,
+            "color_id": 33,
+            "rgb": "ffe383",
+            "year_to": 2011
+        }
+    },
+    {
+        "pk": 34,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Lime",
+            "color_type": "Solid",
+            "year_from": 1982,
+            "color_id": 34,
+            "rgb": "A6CA55",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 35,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Lime",
+            "color_type": "Solid",
+            "year_from": 1992,
+            "color_id": 35,
+            "rgb": "EbEE8F",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 36,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Bright Green",
+            "color_type": "Solid",
+            "year_from": 1950,
+            "color_id": 36,
+            "rgb": "10cb31",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 37,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Medium Green",
+            "color_type": "Solid",
+            "year_from": 1950,
+            "color_id": 37,
+            "rgb": "62F58E",
+            "year_to": 2004
+        }
+    },
+    {
+        "pk": 38,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Green",
+            "color_type": "Solid",
+            "year_from": 1992,
+            "color_id": 38,
+            "rgb": "a5dbb5",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 39,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Turquoise",
+            "color_type": "Solid",
+            "year_from": 1998,
+            "color_id": 39,
+            "rgb": "008a80",
+            "year_to": 2005
+        }
+    },
+    {
+        "pk": 40,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Turquoise",
+            "color_type": "Solid",
+            "year_from": 1998,
+            "color_id": 40,
+            "rgb": "31B5CA",
+            "year_to": 2004
+        }
+    },
+    {
+        "pk": 41,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Aqua",
+            "color_type": "Solid",
+            "year_from": 1998,
+            "color_id": 41,
+            "rgb": "b5d3d6",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 42,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Medium Blue",
+            "color_type": "Solid",
+            "year_from": 1950,
+            "color_id": 42,
+            "rgb": "61afff",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 43,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Violet",
+            "color_type": "Solid",
+            "year_from": 1992,
+            "color_id": 43,
+            "rgb": "3448a4",
+            "year_to": 2004
+        }
+    },
+    {
+        "pk": 44,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Violet",
+            "color_type": "Solid",
+            "year_from": 1994,
+            "color_id": 44,
+            "rgb": "C9CAE2",
+            "year_to": 2005
+        }
+    },
+    {
+        "pk": 45,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Glow In Dark Opaque",
+            "color_type": "Milky",
+            "year_from": 1990,
+            "color_id": 46,
+            "rgb": "d4d5c9",
+            "year_to": 2011
+        }
+    },
+    {
+        "pk": 46,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Pink",
+            "color_type": "Solid",
+            "year_from": 1994,
+            "color_id": 47,
+            "rgb": "C87080",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 47,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Sand Green",
+            "color_type": "Solid",
+            "year_from": 1964,
+            "color_id": 48,
+            "rgb": "76a290",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 48,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Very Light Gray",
+            "color_type": "Solid",
+            "year_from": 1997,
+            "color_id": 49,
+            "rgb": "E8E8E8",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 49,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Dark Pink",
+            "color_type": "Transparent",
+            "year_from": 1998,
+            "color_id": 50,
+            "rgb": "CE1d9b",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 50,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Purple",
+            "color_type": "Transparent",
+            "year_from": 2000,
+            "color_id": 51,
+            "rgb": "8320B7",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 51,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Chrome Blue",
+            "color_type": "Chrome",
+            "year_from": 1998,
+            "color_id": 52,
+            "rgb": "5C66A4",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 52,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Sand Purple",
+            "color_type": "Solid",
+            "year_from": 2001,
+            "color_id": 54,
+            "rgb": "B57DA5",
+            "year_to": 2002
+        }
+    },
+    {
+        "pk": 53,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Sand Blue",
+            "color_type": "Solid",
+            "year_from": 2001,
+            "color_id": 55,
+            "rgb": "5a7184",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 54,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Pink",
+            "color_type": "Solid",
+            "year_from": 1994,
+            "color_id": 56,
+            "rgb": "FFE1FF",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 55,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Chrome Antique Brass",
+            "color_type": "Chrome",
+            "year_from": 2001,
+            "color_id": 57,
+            "rgb": "645a4c",
+            "year_to": 2005
+        }
+    },
+    {
+        "pk": 56,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Sand Red",
+            "color_type": "Solid",
+            "year_from": 2001,
+            "color_id": 58,
+            "rgb": "8c6b6b",
+            "year_to": 2004
+        }
+    },
+    {
+        "pk": 57,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Red",
+            "color_type": "Solid",
+            "year_from": 1961,
+            "color_id": 59,
+            "rgb": "6a0e15",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 58,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Milky White",
+            "color_type": "Milky",
+            "year_from": 1963,
+            "color_id": 60,
+            "rgb": "d4d3dd",
+            "year_to": 2008
+        }
+    },
+    {
+        "pk": 59,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Pearl Light Gold",
+            "color_type": "Pearl",
+            "year_from": 2000,
+            "color_id": 61,
+            "rgb": "E7AE5A",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 60,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Blue",
+            "color_type": "Solid",
+            "year_from": 1950,
+            "color_id": 62,
+            "rgb": "B4D2E3",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 61,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Blue",
+            "color_type": "Solid",
+            "year_from": 1961,
+            "color_id": 63,
+            "rgb": "143044",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 62,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Chrome Green",
+            "color_type": "Chrome",
+            "year_from": 1999,
+            "color_id": 64,
+            "rgb": "3CB371",
+            "year_to": 1999
+        }
+    },
+    {
+        "pk": 63,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Metallic Gold",
+            "color_type": "Metallic",
+            "year_from": 1997,
+            "color_id": 65,
+            "rgb": "B8860B",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 64,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Pearl Light Gray",
+            "color_type": "Pearl",
+            "year_from": 1993,
+            "color_id": 66,
+            "rgb": "ACB7C0",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 65,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Metallic Silver",
+            "color_type": "Metallic",
+            "year_from": 1957,
+            "color_id": 67,
+            "rgb": "C0C0C0",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 66,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Orange",
+            "color_type": "Solid",
+            "year_from": 1979,
+            "color_id": 68,
+            "rgb": "b35408",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 67,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Tan",
+            "color_type": "Solid",
+            "year_from": 1961,
+            "color_id": 69,
+            "rgb": "907450",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 68,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Metallic Green",
+            "color_type": "Metallic",
+            "year_from": 2001,
+            "color_id": 70,
+            "rgb": "bdb573",
+            "year_to": 2003
+        }
+    },
+    {
+        "pk": 69,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Magenta",
+            "color_type": "Solid",
+            "year_from": 2000,
+            "color_id": 71,
+            "rgb": "B52952",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 70,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Maersk Blue",
+            "color_type": "Solid",
+            "year_from": 1974,
+            "color_id": 72,
+            "rgb": "6BADD6",
+            "year_to": 2011
+        }
+    },
+    {
+        "pk": 71,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Medium Violet",
+            "color_type": "Solid",
+            "year_from": 1999,
+            "color_id": 73,
+            "rgb": "9391e4",
+            "year_to": 2005
+        }
+    },
+    {
+        "pk": 72,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Medium Blue",
+            "color_type": "Transparent",
+            "year_from": 2001,
+            "color_id": 74,
+            "rgb": "7384A5",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 73,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Medium Lime",
+            "color_type": "Solid",
+            "year_from": 1998,
+            "color_id": 76,
+            "rgb": "BDC618",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 74,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Pearl Dark Gray",
+            "color_type": "Pearl",
+            "year_from": 2002,
+            "color_id": 77,
+            "rgb": "666660",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 75,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Metal Blue",
+            "color_type": "Pearl",
+            "year_from": 2002,
+            "color_id": 78,
+            "rgb": "5686AE",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 76,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Green",
+            "color_type": "Solid",
+            "year_from": 1961,
+            "color_id": 80,
+            "rgb": "2E5543",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 77,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Flat Dark Gold",
+            "color_type": "Pearl",
+            "year_from": 2003,
+            "color_id": 81,
+            "rgb": "AD7118",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 78,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Chrome Pink",
+            "color_type": "Chrome",
+            "year_from": 2001,
+            "color_id": 82,
+            "rgb": "aa4d8e",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 79,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Pearl White",
+            "color_type": "Pearl",
+            "year_from": 2003,
+            "color_id": 83,
+            "rgb": "FFFFFF",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 80,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Copper",
+            "color_type": "Pearl",
+            "year_from": 2001,
+            "color_id": 84,
+            "rgb": "C66921",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 81,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Bluish Gray",
+            "color_type": "Solid",
+            "year_from": 1991,
+            "color_id": 85,
+            "rgb": "595D60",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 82,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Bluish Gray",
+            "color_type": "Solid",
+            "year_from": 1993,
+            "color_id": 86,
+            "rgb": "afb5c7",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 83,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Sky Blue",
+            "color_type": "Solid",
+            "year_from": 2003,
+            "color_id": 87,
+            "rgb": "7DBFDD",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 84,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Reddish Brown",
+            "color_type": "Solid",
+            "year_from": 1961,
+            "color_id": 88,
+            "rgb": "89351d",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 85,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Purple",
+            "color_type": "Solid",
+            "year_from": 2003,
+            "color_id": 89,
+            "rgb": "5f2683",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 86,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Flesh",
+            "color_type": "Solid",
+            "year_from": 2003,
+            "color_id": 90,
+            "rgb": "feccb0",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 87,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Flesh",
+            "color_type": "Solid",
+            "year_from": 2004,
+            "color_id": 91,
+            "rgb": "774125",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 88,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Purple",
+            "color_type": "Solid",
+            "year_from": 2004,
+            "color_id": 93,
+            "rgb": "DA70D6",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 89,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Medium Dark Pink",
+            "color_type": "Solid",
+            "year_from": 1992,
+            "color_id": 94,
+            "rgb": "F785B1",
+            "year_to": 1996
+        }
+    },
+    {
+        "pk": 90,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Flat Silver",
+            "color_type": "Pearl",
+            "year_from": 1998,
+            "color_id": 95,
+            "rgb": "8D949C",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 91,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Very Light Orange",
+            "color_type": "Solid",
+            "year_from": 2000,
+            "color_id": 96,
+            "rgb": "E6C05D",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 92,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Blue-Violet",
+            "color_type": "Solid",
+            "year_from": 2004,
+            "color_id": 97,
+            "rgb": "506cef",
+            "year_to": 2005
+        }
+    },
+    {
+        "pk": 93,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Orange",
+            "color_type": "Transparent",
+            "year_from": 2003,
+            "color_id": 98,
+            "rgb": "D78019",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 94,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Very Light Bluish Gray",
+            "color_type": "Solid",
+            "year_from": 2004,
+            "color_id": 99,
+            "rgb": "e4e8e8",
+            "year_to": 2010
+        }
+    },
+    {
+        "pk": 95,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Glitter Trans-Dark Pink",
+            "color_type": "Glitter",
+            "year_from": 1999,
+            "color_id": 100,
+            "rgb": "ab43c3",
+            "year_to": 2010
+        }
+    },
+    {
+        "pk": 96,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Glitter Trans-Clear",
+            "color_type": "Glitter",
+            "year_from": 1999,
+            "color_id": 101,
+            "rgb": "b2adaa",
+            "year_to": 2007
+        }
+    },
+    {
+        "pk": 97,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Glitter Trans-Purple",
+            "color_type": "Glitter",
+            "year_from": 2000,
+            "color_id": 102,
+            "rgb": "3A2B82",
+            "year_to": 2005
+        }
+    },
+    {
+        "pk": 98,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Bright Light Yellow",
+            "color_type": "Solid",
+            "year_from": 2004,
+            "color_id": 103,
+            "rgb": "F3E055",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 99,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Bright Pink",
+            "color_type": "Solid",
+            "year_from": 2003,
+            "color_id": 104,
+            "rgb": "FFBBFF",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 100,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Bright Light Blue",
+            "color_type": "Solid",
+            "year_from": 2004,
+            "color_id": 105,
+            "rgb": "9FC3E9",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 101,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Fabuland Brown",
+            "color_type": "Solid",
+            "year_from": 1979,
+            "color_id": 106,
+            "rgb": "B3694E",
+            "year_to": 1997
+        }
+    },
+    {
+        "pk": 102,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Pink",
+            "color_type": "Transparent",
+            "year_from": 2003,
+            "color_id": 107,
+            "rgb": "FF8298",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 103,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Bright Green",
+            "color_type": "Transparent",
+            "year_from": 2003,
+            "color_id": 108,
+            "rgb": "10Cb31",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 104,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Blue-Violet",
+            "color_type": "Solid",
+            "year_from": 2004,
+            "color_id": 109,
+            "rgb": "2032B0",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 105,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Bright Light Orange",
+            "color_type": "Solid",
+            "year_from": 2000,
+            "color_id": 110,
+            "rgb": "F7BA30",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 106,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Speckle Black-Silver",
+            "color_type": "Speckle",
+            "year_from": 2005,
+            "color_id": 111,
+            "rgb": "7C7E7C",
+            "year_to": 2011
+        }
+    },
+    {
+        "pk": 107,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Very Lt Blue",
+            "color_type": "Transparent",
+            "year_from": 2003,
+            "color_id": 113,
+            "rgb": "B7C8BF",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 108,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Light Purple",
+            "color_type": "Transparent",
+            "year_from": 2005,
+            "color_id": 114,
+            "rgb": "B97AB1",
+            "year_to": 2005
+        }
+    },
+    {
+        "pk": 109,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Pearl Gold",
+            "color_type": "Pearl",
+            "year_from": 2002,
+            "color_id": 115,
+            "rgb": "e79500",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 110,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Speckle Black-Copper",
+            "color_type": "Speckle",
+            "year_from": 2006,
+            "color_id": 116,
+            "rgb": "5F4E47",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 111,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Speckle DBGray-Silver",
+            "color_type": "Speckle",
+            "year_from": 2006,
+            "color_id": 117,
+            "rgb": "4A6363",
+            "year_to": 2006
+        }
+    },
+    {
+        "pk": 112,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Glow In Dark Trans",
+            "color_type": "Milky",
+            "year_from": 2005,
+            "color_id": 118,
+            "rgb": "bdc6ad",
+            "year_to": 2011
+        }
+    },
+    {
+        "pk": 113,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Pearl Very Light Gray",
+            "color_type": "Pearl",
+            "year_from": 2002,
+            "color_id": 119,
+            "rgb": "D4D2CD",
+            "year_to": 2003
+        }
+    },
+    {
+        "pk": 114,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Brown",
+            "color_type": "Solid",
+            "year_from": 2008,
+            "color_id": 120,
+            "rgb": "330000",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 115,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Trans-Neon Yellow",
+            "color_type": "Transparent",
+            "year_from": 2001,
+            "color_id": 121,
+            "rgb": "FFD700",
+            "year_to": 2005
+        }
+    },
+    {
+        "pk": 116,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Chrome Black",
+            "color_type": "Chrome",
+            "year_from": 2009,
+            "color_id": 122,
+            "rgb": "544E4F",
+            "year_to": 2009
+        }
+    },
+    {
+        "pk": 117,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx White",
+            "color_type": "Modulex",
+            "year_from": 2012,
+            "color_id": 123,
+            "rgb": "FFFFFF",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 118,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Light Bluish Gray",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 124,
+            "rgb": "AfB5C7",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 119,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Light Gray",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 125,
+            "rgb": "9C9C9C",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 120,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Charcoal Gray",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 126,
+            "rgb": "595D60",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 121,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Tile Gray",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 127,
+            "rgb": "6B5A5A",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 122,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Black",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 128,
+            "rgb": "000000",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 123,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Red",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 129,
+            "rgb": "B52C20",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 124,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Pink Red",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 130,
+            "rgb": "F45C40",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 125,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Tile Brown",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 131,
+            "rgb": "330000",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 126,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Brown",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 132,
+            "rgb": "907450",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 127,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Buff",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 133,
+            "rgb": "DEC69C",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 128,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Terracotta",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 134,
+            "rgb": "5C5030",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 129,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Orange",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 135,
+            "rgb": "F47B30",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 130,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Light Orange",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 136,
+            "rgb": "F7AD63",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 131,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Light Yellow",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 137,
+            "rgb": "FFE371",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 132,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Ochre Yellow",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 138,
+            "rgb": "FED557",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 133,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Lemon",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 139,
+            "rgb": "BDC618",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 134,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Olive Green",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 140,
+            "rgb": "7C9051",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 135,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Pastel Green",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 141,
+            "rgb": "7DB538",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 136,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Aqua Green",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 142,
+            "rgb": "27867E",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 137,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Tile Blue",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 143,
+            "rgb": "0057A6",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 138,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Medium Blue",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 144,
+            "rgb": "61AFFF",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 139,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Pastel Blue",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 145,
+            "rgb": "68AECE",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 140,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Teal Blue",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 146,
+            "rgb": "467083",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 141,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Violet",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 147,
+            "rgb": "BD7D85",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 142,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Pink",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 148,
+            "rgb": "F785B1",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 143,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Mx Clear",
+            "color_type": "Modulex",
+            "year_from": null,
+            "color_id": 149,
+            "rgb": "FFFFFF",
+            "year_to": null
+        }
+    },
+    {
+        "pk": 144,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Medium Dark Flesh",
+            "color_type": "Solid",
+            "year_from": 2010,
+            "color_id": 150,
+            "rgb": "E78B3E",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 145,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Speckle Black-Gold",
+            "color_type": "Speckle",
+            "year_from": 2010,
+            "color_id": 151,
+            "rgb": "AB9421",
+            "year_to": 2011
+        }
+    },
+    {
+        "pk": 146,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Light Aqua",
+            "color_type": "Solid",
+            "year_from": 2011,
+            "color_id": 152,
+            "rgb": "CCFFFF",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 147,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Dark Azure",
+            "color_type": "Solid",
+            "year_from": 2011,
+            "color_id": 153,
+            "rgb": "3399FF",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 148,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Lavender",
+            "color_type": "Solid",
+            "year_from": 2011,
+            "color_id": 154,
+            "rgb": "CBA2C8",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 149,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Olive Green",
+            "color_type": "Solid",
+            "year_from": 2012,
+            "color_id": 155,
+            "rgb": "7C9051",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 150,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Medium Azure",
+            "color_type": "Solid",
+            "year_from": 2012,
+            "color_id": 156,
+            "rgb": "42C0FB",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 151,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Medium Lavender",
+            "color_type": "Solid",
+            "year_from": 2012,
+            "color_id": 157,
+            "rgb": "B5A5D5",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 152,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Yellowish Green",
+            "color_type": "Solid",
+            "year_from": 2012,
+            "color_id": 158,
+            "rgb": "DFEEA5",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 153,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Glow in Dark White",
+            "color_type": "Milky",
+            "year_from": 2012,
+            "color_id": 159,
+            "rgb": "d9d9d9",
+            "year_to": 2012
+        }
+    },
+    {
+        "pk": 154,
+        "model": "inventory.color",
+        "fields": {
+            "name": "Fabuland Orange",
+            "color_type": "Solid",
+            "year_from": null,
+            "color_id": 160,
+            "rgb": "EF9121",
+            "year_to": null
+        }
+    }
+]

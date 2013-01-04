@@ -1,0 +1,4794 @@
+[
+    {
+        "pk": 1,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 1,
+            "name": "Antenna"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 2,
+            "name": "Baseplate"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 3,
+            "name": "Boat"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 4,
+            "name": "Bracket"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 5,
+            "name": "Brick"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 6,
+            "name": "Brick, Arch"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 7,
+            "name": "Brick, Modified"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 8,
+            "name": "Brick, Round"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 9,
+            "name": "Castle"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 10,
+            "name": "Container"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 11,
+            "name": "Cylinder"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 12,
+            "name": "Door"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 13,
+            "name": "Fence"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 14,
+            "name": "Magnet"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 16,
+            "name": "Minifig, Headgear"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 18,
+            "name": "Minifig, Utensil"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 19,
+            "name": "Minifig, Weapon"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 20,
+            "name": "Minifig, Body Part"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 21,
+            "name": "Cone"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 22,
+            "name": "Hinge"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 24,
+            "name": "Lever"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 25,
+            "name": "Plant"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 26,
+            "name": "Plate"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 27,
+            "name": "Plate, Modified"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 28,
+            "name": "Plate, Round"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 30,
+            "name": "Propeller"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 31,
+            "name": "Slope"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 32,
+            "name": "Slope, Inverted"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 33,
+            "name": "Slope, Decorated"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 34,
+            "name": "Space"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 36,
+            "name": "Technic"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 37,
+            "name": "Tile"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 38,
+            "name": "Tile, Modified"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 39,
+            "name": "Tile, Decorated"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 40,
+            "name": "Turntable"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 42,
+            "name": "Wedge"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 43,
+            "name": "Wheel"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 45,
+            "name": "Arm"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 46,
+            "name": "Bar"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 48,
+            "name": "Belville"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 53,
+            "name": "Adventurers"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 54,
+            "name": "Aquazone"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 59,
+            "name": "Mindstorms"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 60,
+            "name": "Model Team"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 61,
+            "name": "Pirates"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 62,
+            "name": "Rock Raiders"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 63,
+            "name": "Service Packs"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 65,
+            "name": "Star Wars"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 67,
+            "name": "Town"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 69,
+            "name": "Western"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 71,
+            "name": "Paradisa"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 72,
+            "name": "Vehicle"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 73,
+            "name": "Conveyor"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 74,
+            "name": "Crane"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 76,
+            "name": "Flag"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 77,
+            "name": "Vehicle, Mudguard"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 78,
+            "name": "Freestyle"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 79,
+            "name": "Garage"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 81,
+            "name": "Glass"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 83,
+            "name": "Hinge, Decorated"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 84,
+            "name": "Window, Decorated"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 85,
+            "name": "Homemaker"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 86,
+            "name": "Animal, Accessory"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 87,
+            "name": "Hose"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 88,
+            "name": "String Reel / Winch"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 90,
+            "name": "Ladder"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 91,
+            "name": "Panel"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 93,
+            "name": "Aircraft"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 95,
+            "name": "Plant, Tree"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 98,
+            "name": "Road Sign"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 99,
+            "name": "Rock"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 102,
+            "name": "Scala"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 103,
+            "name": "Stairs"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 105,
+            "name": "Support"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 106,
+            "name": "Tail"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 107,
+            "name": "Tap"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 111,
+            "name": "Tire & Tread"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 112,
+            "name": "Hook"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 113,
+            "name": "Window"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 114,
+            "name": "Wing"
+        }
+    },
+    {
+        "pk": 81,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 115,
+            "name": "Windscreen"
+        }
+    },
+    {
+        "pk": 82,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 116,
+            "name": "Dish"
+        }
+    },
+    {
+        "pk": 83,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 117,
+            "name": "Tile, Round"
+        }
+    },
+    {
+        "pk": 84,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 118,
+            "name": "Brick, Decorated"
+        }
+    },
+    {
+        "pk": 85,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 119,
+            "name": "Electric"
+        }
+    },
+    {
+        "pk": 86,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 121,
+            "name": "Electric, Motor"
+        }
+    },
+    {
+        "pk": 87,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 122,
+            "name": "Electric, Train"
+        }
+    },
+    {
+        "pk": 88,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 123,
+            "name": "Electric, Light & Sound"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 124,
+            "name": "Train"
+        }
+    },
+    {
+        "pk": 90,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 128,
+            "name": "Train, Track"
+        }
+    },
+    {
+        "pk": 91,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 130,
+            "name": "Baseplate, Road"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 131,
+            "name": "Vehicle, Base"
+        }
+    },
+    {
+        "pk": 93,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 132,
+            "name": "Glass, Decorated"
+        }
+    },
+    {
+        "pk": 94,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 133,
+            "name": "Technic, Connector"
+        }
+    },
+    {
+        "pk": 95,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 134,
+            "name": "Technic, Axle"
+        }
+    },
+    {
+        "pk": 96,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 135,
+            "name": "Technic, Brick"
+        }
+    },
+    {
+        "pk": 97,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 136,
+            "name": "Technic, Gear"
+        }
+    },
+    {
+        "pk": 98,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 137,
+            "name": "Technic, Liftarm"
+        }
+    },
+    {
+        "pk": 99,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 138,
+            "name": "Technic, Link"
+        }
+    },
+    {
+        "pk": 100,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 139,
+            "name": "Technic, Pin"
+        }
+    },
+    {
+        "pk": 101,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 140,
+            "name": "Technic, Plate"
+        }
+    },
+    {
+        "pk": 102,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 141,
+            "name": "Technic, Steering"
+        }
+    },
+    {
+        "pk": 103,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 142,
+            "name": "Minifig, Body Wear"
+        }
+    },
+    {
+        "pk": 104,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 143,
+            "name": "(Other)"
+        }
+    },
+    {
+        "pk": 105,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 145,
+            "name": "Animal, Water"
+        }
+    },
+    {
+        "pk": 106,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 146,
+            "name": "Animal, Air"
+        }
+    },
+    {
+        "pk": 107,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 147,
+            "name": "Animal, Land"
+        }
+    },
+    {
+        "pk": 108,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 148,
+            "name": "Animal, Body Part"
+        }
+    },
+    {
+        "pk": 109,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 149,
+            "name": "Disney's Mickey Mouse"
+        }
+    },
+    {
+        "pk": 110,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 150,
+            "name": "Minifig, Torso"
+        }
+    },
+    {
+        "pk": 111,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 152,
+            "name": "Znap"
+        }
+    },
+    {
+        "pk": 112,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 153,
+            "name": "Fabuland"
+        }
+    },
+    {
+        "pk": 113,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 154,
+            "name": "Technic, Panel"
+        }
+    },
+    {
+        "pk": 114,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 155,
+            "name": "Basic"
+        }
+    },
+    {
+        "pk": 115,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 157,
+            "name": "Time Cruisers"
+        }
+    },
+    {
+        "pk": 116,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 158,
+            "name": "Radio Control"
+        }
+    },
+    {
+        "pk": 117,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 159,
+            "name": "Pneumatic"
+        }
+    },
+    {
+        "pk": 118,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 160,
+            "name": "Sticker"
+        }
+    },
+    {
+        "pk": 119,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 161,
+            "name": "Plastic"
+        }
+    },
+    {
+        "pk": 120,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 162,
+            "name": "Cloth"
+        }
+    },
+    {
+        "pk": 121,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 166,
+            "name": "Educational & Dacta"
+        }
+    },
+    {
+        "pk": 122,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 167,
+            "name": "Duplo"
+        }
+    },
+    {
+        "pk": 123,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 169,
+            "name": "Sculptures"
+        }
+    },
+    {
+        "pk": 124,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 170,
+            "name": "Alpha Team"
+        }
+    },
+    {
+        "pk": 125,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 171,
+            "name": "Creator"
+        }
+    },
+    {
+        "pk": 126,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 172,
+            "name": "Life On Mars"
+        }
+    },
+    {
+        "pk": 127,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 173,
+            "name": "Action Wheelers"
+        }
+    },
+    {
+        "pk": 128,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 174,
+            "name": "Studios"
+        }
+    },
+    {
+        "pk": 129,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 175,
+            "name": "Food & Drink"
+        }
+    },
+    {
+        "pk": 130,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 178,
+            "name": "Jack Stone"
+        }
+    },
+    {
+        "pk": 131,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 179,
+            "name": "Racers"
+        }
+    },
+    {
+        "pk": 132,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 180,
+            "name": "Software"
+        }
+    },
+    {
+        "pk": 133,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 183,
+            "name": "Dinosaurs"
+        }
+    },
+    {
+        "pk": 134,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 184,
+            "name": "Animal, Dinosaur"
+        }
+    },
+    {
+        "pk": 135,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 185,
+            "name": "Ferries"
+        }
+    },
+    {
+        "pk": 136,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 224,
+            "name": "Soccer"
+        }
+    },
+    {
+        "pk": 137,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 225,
+            "name": "Riding Cycle"
+        }
+    },
+    {
+        "pk": 138,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 226,
+            "name": "Hobby Sets"
+        }
+    },
+    {
+        "pk": 139,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 227,
+            "name": "Harry Potter"
+        }
+    },
+    {
+        "pk": 140,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 229,
+            "name": "Rubber Band & Belt"
+        }
+    },
+    {
+        "pk": 141,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 231,
+            "name": "String"
+        }
+    },
+    {
+        "pk": 142,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 234,
+            "name": "Foam"
+        }
+    },
+    {
+        "pk": 143,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 235,
+            "name": "Bionicle, Kanohi Mask"
+        }
+    },
+    {
+        "pk": 144,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 237,
+            "name": "Monorail"
+        }
+    },
+    {
+        "pk": 145,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 238,
+            "name": "Minifig, Head"
+        }
+    },
+    {
+        "pk": 146,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 241,
+            "name": "Pen"
+        }
+    },
+    {
+        "pk": 147,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 242,
+            "name": "Technic, Figure Accessory"
+        }
+    },
+    {
+        "pk": 148,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 243,
+            "name": "Baseplate, Raised"
+        }
+    },
+    {
+        "pk": 149,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 246,
+            "name": "Paper"
+        }
+    },
+    {
+        "pk": 150,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 247,
+            "name": "Desert"
+        }
+    },
+    {
+        "pk": 151,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 248,
+            "name": "Jungle"
+        }
+    },
+    {
+        "pk": 152,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 249,
+            "name": "Dino Island"
+        }
+    },
+    {
+        "pk": 153,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 251,
+            "name": "Post Office"
+        }
+    },
+    {
+        "pk": 154,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 252,
+            "name": "Game"
+        }
+    },
+    {
+        "pk": 155,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 254,
+            "name": "Learning Book"
+        }
+    },
+    {
+        "pk": 156,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 256,
+            "name": "Jurassic Park III"
+        }
+    },
+    {
+        "pk": 157,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 257,
+            "name": "Star Wars Episode 1"
+        }
+    },
+    {
+        "pk": 158,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 258,
+            "name": "Star Wars Episode 4/5/6"
+        }
+    },
+    {
+        "pk": 159,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 259,
+            "name": "Ultimate Collector Series"
+        }
+    },
+    {
+        "pk": 160,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 260,
+            "name": "Aquanauts"
+        }
+    },
+    {
+        "pk": 161,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 261,
+            "name": "Aquaraiders I"
+        }
+    },
+    {
+        "pk": 162,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 262,
+            "name": "Aquasharks"
+        }
+    },
+    {
+        "pk": 163,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 263,
+            "name": "Hydronauts"
+        }
+    },
+    {
+        "pk": 164,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 264,
+            "name": "Stingrays"
+        }
+    },
+    {
+        "pk": 165,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 266,
+            "name": "Fairy-Tale"
+        }
+    },
+    {
+        "pk": 166,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 267,
+            "name": "Legends"
+        }
+    },
+    {
+        "pk": 167,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 269,
+            "name": "Imperial Guards"
+        }
+    },
+    {
+        "pk": 168,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 270,
+            "name": "Imperial Soldiers"
+        }
+    },
+    {
+        "pk": 169,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 271,
+            "name": "Islanders"
+        }
+    },
+    {
+        "pk": 170,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 272,
+            "name": "Imperial Armada"
+        }
+    },
+    {
+        "pk": 171,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 273,
+            "name": "Bionicle"
+        }
+    },
+    {
+        "pk": 172,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 274,
+            "name": "Indians"
+        }
+    },
+    {
+        "pk": 173,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 275,
+            "name": "Cowboys"
+        }
+    },
+    {
+        "pk": 174,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 276,
+            "name": "Jewelry"
+        }
+    },
+    {
+        "pk": 175,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 277,
+            "name": "Legoland"
+        }
+    },
+    {
+        "pk": 176,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 278,
+            "name": "Black Knights"
+        }
+    },
+    {
+        "pk": 177,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 279,
+            "name": "Crusaders"
+        }
+    },
+    {
+        "pk": 178,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 280,
+            "name": "Dark Forest"
+        }
+    },
+    {
+        "pk": 179,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 281,
+            "name": "Dragon Knights"
+        }
+    },
+    {
+        "pk": 180,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 282,
+            "name": "Fright Knights"
+        }
+    },
+    {
+        "pk": 181,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 283,
+            "name": "Knights Kingdom I"
+        }
+    },
+    {
+        "pk": 182,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 284,
+            "name": "Ninja"
+        }
+    },
+    {
+        "pk": 183,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 285,
+            "name": "Royal Knights"
+        }
+    },
+    {
+        "pk": 184,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 286,
+            "name": "Wolfpack"
+        }
+    },
+    {
+        "pk": 185,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 288,
+            "name": "Forestmen"
+        }
+    },
+    {
+        "pk": 186,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 289,
+            "name": "Black Falcons"
+        }
+    },
+    {
+        "pk": 187,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 290,
+            "name": "Value Packs"
+        }
+    },
+    {
+        "pk": 188,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 291,
+            "name": "Lion Knights"
+        }
+    },
+    {
+        "pk": 189,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 292,
+            "name": "Little Forest Friends"
+        }
+    },
+    {
+        "pk": 190,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 293,
+            "name": "Baby"
+        }
+    },
+    {
+        "pk": 191,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 294,
+            "name": "Primo"
+        }
+    },
+    {
+        "pk": 192,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 296,
+            "name": "Toolo"
+        }
+    },
+    {
+        "pk": 193,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 298,
+            "name": "Winnie The Pooh"
+        }
+    },
+    {
+        "pk": 194,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 299,
+            "name": "Bob The Builder"
+        }
+    },
+    {
+        "pk": 195,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 300,
+            "name": "Blacktron I"
+        }
+    },
+    {
+        "pk": 196,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 301,
+            "name": "Blacktron II"
+        }
+    },
+    {
+        "pk": 197,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 302,
+            "name": "Exploriens"
+        }
+    },
+    {
+        "pk": 198,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 303,
+            "name": "Futuron"
+        }
+    },
+    {
+        "pk": 199,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 304,
+            "name": "Ice Planet 2002"
+        }
+    },
+    {
+        "pk": 200,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 305,
+            "name": "Insectoids"
+        }
+    },
+    {
+        "pk": 201,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 306,
+            "name": "M:Tron"
+        }
+    },
+    {
+        "pk": 202,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 307,
+            "name": "RoboForce"
+        }
+    },
+    {
+        "pk": 203,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 308,
+            "name": "Space Police I"
+        }
+    },
+    {
+        "pk": 204,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 309,
+            "name": "Space Police II"
+        }
+    },
+    {
+        "pk": 205,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 310,
+            "name": "Spyrius"
+        }
+    },
+    {
+        "pk": 206,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 311,
+            "name": "UFO"
+        }
+    },
+    {
+        "pk": 207,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 312,
+            "name": "Unitron"
+        }
+    },
+    {
+        "pk": 208,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 314,
+            "name": "Classic Space"
+        }
+    },
+    {
+        "pk": 209,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 315,
+            "name": "9V"
+        }
+    },
+    {
+        "pk": 210,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 316,
+            "name": "4.5V"
+        }
+    },
+    {
+        "pk": 211,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 317,
+            "name": "Idea Book"
+        }
+    },
+    {
+        "pk": 212,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 318,
+            "name": "12V"
+        }
+    },
+    {
+        "pk": 213,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 319,
+            "name": "Fire"
+        }
+    },
+    {
+        "pk": 214,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 322,
+            "name": "Arctic Technic"
+        }
+    },
+    {
+        "pk": 215,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 323,
+            "name": "Police"
+        }
+    },
+    {
+        "pk": 216,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 324,
+            "name": "Rattles"
+        }
+    },
+    {
+        "pk": 217,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 325,
+            "name": "Airport"
+        }
+    },
+    {
+        "pk": 218,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 326,
+            "name": "Divers"
+        }
+    },
+    {
+        "pk": 219,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 327,
+            "name": "Hospital"
+        }
+    },
+    {
+        "pk": 220,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 328,
+            "name": "Extreme Team"
+        }
+    },
+    {
+        "pk": 221,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 329,
+            "name": "Res-Q"
+        }
+    },
+    {
+        "pk": 222,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 330,
+            "name": "Space Port"
+        }
+    },
+    {
+        "pk": 223,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 331,
+            "name": "Comic Book"
+        }
+    },
+    {
+        "pk": 224,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 332,
+            "name": "Informational Book"
+        }
+    },
+    {
+        "pk": 225,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 333,
+            "name": "Game Card"
+        }
+    },
+    {
+        "pk": 226,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 334,
+            "name": "Key Chain"
+        }
+    },
+    {
+        "pk": 227,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 336,
+            "name": "Clock"
+        }
+    },
+    {
+        "pk": 228,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 340,
+            "name": "1965"
+        }
+    },
+    {
+        "pk": 229,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 341,
+            "name": "1966"
+        }
+    },
+    {
+        "pk": 230,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 342,
+            "name": "1967"
+        }
+    },
+    {
+        "pk": 231,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 343,
+            "name": "1968"
+        }
+    },
+    {
+        "pk": 232,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 344,
+            "name": "1969"
+        }
+    },
+    {
+        "pk": 233,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 345,
+            "name": "1970"
+        }
+    },
+    {
+        "pk": 234,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 346,
+            "name": "1971"
+        }
+    },
+    {
+        "pk": 235,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 347,
+            "name": "1972"
+        }
+    },
+    {
+        "pk": 236,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 348,
+            "name": "1973"
+        }
+    },
+    {
+        "pk": 237,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 349,
+            "name": "1974"
+        }
+    },
+    {
+        "pk": 238,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 350,
+            "name": "1975"
+        }
+    },
+    {
+        "pk": 239,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 351,
+            "name": "1976"
+        }
+    },
+    {
+        "pk": 240,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 352,
+            "name": "1977"
+        }
+    },
+    {
+        "pk": 241,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 353,
+            "name": "1978"
+        }
+    },
+    {
+        "pk": 242,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 354,
+            "name": "1979"
+        }
+    },
+    {
+        "pk": 243,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 355,
+            "name": "1980"
+        }
+    },
+    {
+        "pk": 244,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 356,
+            "name": "1981"
+        }
+    },
+    {
+        "pk": 245,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 357,
+            "name": "1982"
+        }
+    },
+    {
+        "pk": 246,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 358,
+            "name": "1983"
+        }
+    },
+    {
+        "pk": 247,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 359,
+            "name": "1984"
+        }
+    },
+    {
+        "pk": 248,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 360,
+            "name": "1985"
+        }
+    },
+    {
+        "pk": 249,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 361,
+            "name": "1986"
+        }
+    },
+    {
+        "pk": 250,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 362,
+            "name": "1987"
+        }
+    },
+    {
+        "pk": 251,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 363,
+            "name": "1988"
+        }
+    },
+    {
+        "pk": 252,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 364,
+            "name": "1989"
+        }
+    },
+    {
+        "pk": 253,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 365,
+            "name": "1990"
+        }
+    },
+    {
+        "pk": 254,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 366,
+            "name": "1991"
+        }
+    },
+    {
+        "pk": 255,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 367,
+            "name": "1992"
+        }
+    },
+    {
+        "pk": 256,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 368,
+            "name": "1993"
+        }
+    },
+    {
+        "pk": 257,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 369,
+            "name": "1994"
+        }
+    },
+    {
+        "pk": 258,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 370,
+            "name": "1995"
+        }
+    },
+    {
+        "pk": 259,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 371,
+            "name": "1996"
+        }
+    },
+    {
+        "pk": 260,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 372,
+            "name": "1997"
+        }
+    },
+    {
+        "pk": 261,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 373,
+            "name": "1998"
+        }
+    },
+    {
+        "pk": 262,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 374,
+            "name": "1999"
+        }
+    },
+    {
+        "pk": 263,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 375,
+            "name": "2000"
+        }
+    },
+    {
+        "pk": 264,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 377,
+            "name": "2001"
+        }
+    },
+    {
+        "pk": 265,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 378,
+            "name": "2002"
+        }
+    },
+    {
+        "pk": 266,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 379,
+            "name": "Roof"
+        }
+    },
+    {
+        "pk": 267,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 380,
+            "name": "Trading Card"
+        }
+    },
+    {
+        "pk": 268,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 381,
+            "name": "Star Wars Episode 2"
+        }
+    },
+    {
+        "pk": 269,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 382,
+            "name": "Competition"
+        }
+    },
+    {
+        "pk": 270,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 383,
+            "name": "Off-Road"
+        }
+    },
+    {
+        "pk": 271,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 384,
+            "name": "RoboRiders"
+        }
+    },
+    {
+        "pk": 272,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 385,
+            "name": "Throwbot / Slizer"
+        }
+    },
+    {
+        "pk": 273,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 386,
+            "name": "Speed Slammers"
+        }
+    },
+    {
+        "pk": 274,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 387,
+            "name": "Expert Builder"
+        }
+    },
+    {
+        "pk": 275,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 388,
+            "name": "Building Set with People"
+        }
+    },
+    {
+        "pk": 276,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 389,
+            "name": "Zoo"
+        }
+    },
+    {
+        "pk": 277,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 390,
+            "name": "Holiday"
+        }
+    },
+    {
+        "pk": 278,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 391,
+            "name": "Christmas"
+        }
+    },
+    {
+        "pk": 279,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 392,
+            "name": "Easter"
+        }
+    },
+    {
+        "pk": 280,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 393,
+            "name": "Halloween"
+        }
+    },
+    {
+        "pk": 281,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 394,
+            "name": "Minitalia"
+        }
+    },
+    {
+        "pk": 282,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 395,
+            "name": "Samsonite"
+        }
+    },
+    {
+        "pk": 283,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 397,
+            "name": "Supplemental"
+        }
+    },
+    {
+        "pk": 284,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 398,
+            "name": "Human Furniture"
+        }
+    },
+    {
+        "pk": 285,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 399,
+            "name": "Storage"
+        }
+    },
+    {
+        "pk": 286,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 405,
+            "name": "Learning"
+        }
+    },
+    {
+        "pk": 287,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 408,
+            "name": "eLAB"
+        }
+    },
+    {
+        "pk": 288,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 411,
+            "name": "Electric, Battery Box"
+        }
+    },
+    {
+        "pk": 289,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 412,
+            "name": "Belville, Figure Accessory"
+        }
+    },
+    {
+        "pk": 290,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 413,
+            "name": "Scala, Figure Accessory"
+        }
+    },
+    {
+        "pk": 291,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 417,
+            "name": "Duplo, Brick"
+        }
+    },
+    {
+        "pk": 292,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 418,
+            "name": "Minifig, Shield"
+        }
+    },
+    {
+        "pk": 293,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 420,
+            "name": "Duplo, Animal"
+        }
+    },
+    {
+        "pk": 294,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 421,
+            "name": "Gears"
+        }
+    },
+    {
+        "pk": 295,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 422,
+            "name": "Universal Building Set"
+        }
+    },
+    {
+        "pk": 296,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 423,
+            "name": "Classic"
+        }
+    },
+    {
+        "pk": 297,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 424,
+            "name": "HO 1:87 Vehicles"
+        }
+    },
+    {
+        "pk": 298,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 425,
+            "name": "Building"
+        }
+    },
+    {
+        "pk": 299,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 429,
+            "name": "Jumbo Bricks"
+        }
+    },
+    {
+        "pk": 300,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 432,
+            "name": "Model Maker"
+        }
+    },
+    {
+        "pk": 301,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 433,
+            "name": "Mosaic"
+        }
+    },
+    {
+        "pk": 302,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 436,
+            "name": "Spybotics"
+        }
+    },
+    {
+        "pk": 303,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 437,
+            "name": "Explore"
+        }
+    },
+    {
+        "pk": 304,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 438,
+            "name": "Slope, Curved"
+        }
+    },
+    {
+        "pk": 305,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 439,
+            "name": "Soft Bricks"
+        }
+    },
+    {
+        "pk": 306,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 440,
+            "name": "Duplo, Brick, Decorated"
+        }
+    },
+    {
+        "pk": 307,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 441,
+            "name": "Duplo, Train"
+        }
+    },
+    {
+        "pk": 308,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 443,
+            "name": "Puzzle"
+        }
+    },
+    {
+        "pk": 309,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 444,
+            "name": "Galidor"
+        }
+    },
+    {
+        "pk": 310,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 445,
+            "name": "Patch & Pin"
+        }
+    },
+    {
+        "pk": 311,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 447,
+            "name": "Office & School Supplies"
+        }
+    },
+    {
+        "pk": 312,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 449,
+            "name": "Island Xtreme Stunts"
+        }
+    },
+    {
+        "pk": 313,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 450,
+            "name": "Track System"
+        }
+    },
+    {
+        "pk": 314,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 461,
+            "name": "Panel, Decorated"
+        }
+    },
+    {
+        "pk": 315,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 462,
+            "name": "Magazine"
+        }
+    },
+    {
+        "pk": 316,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 463,
+            "name": "Electric, Programmable"
+        }
+    },
+    {
+        "pk": 317,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 464,
+            "name": "Bead"
+        }
+    },
+    {
+        "pk": 318,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 467,
+            "name": "My Own Creation"
+        }
+    },
+    {
+        "pk": 319,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 469,
+            "name": "Spider-Man"
+        }
+    },
+    {
+        "pk": 320,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 472,
+            "name": "Postcard"
+        }
+    },
+    {
+        "pk": 321,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 473,
+            "name": "Sports"
+        }
+    },
+    {
+        "pk": 322,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 474,
+            "name": "Basketball"
+        }
+    },
+    {
+        "pk": 323,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 475,
+            "name": "Orient Expedition"
+        }
+    },
+    {
+        "pk": 324,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 476,
+            "name": "Hockey"
+        }
+    },
+    {
+        "pk": 325,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 478,
+            "name": "Bulk Bricks"
+        }
+    },
+    {
+        "pk": 326,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 479,
+            "name": "Cockpit"
+        }
+    },
+    {
+        "pk": 327,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 480,
+            "name": "Arctic"
+        }
+    },
+    {
+        "pk": 328,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 481,
+            "name": "Mini"
+        }
+    },
+    {
+        "pk": 329,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 482,
+            "name": "Discovery"
+        }
+    },
+    {
+        "pk": 330,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 483,
+            "name": "Technic, Flex Cable"
+        }
+    },
+    {
+        "pk": 331,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 484,
+            "name": "Minifig, Legs Assembly"
+        }
+    },
+    {
+        "pk": 332,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 485,
+            "name": "Minifig, Torso Assembly"
+        }
+    },
+    {
+        "pk": 333,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 486,
+            "name": "Designer Sets"
+        }
+    },
+    {
+        "pk": 334,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 487,
+            "name": "Duplo, Plate"
+        }
+    },
+    {
+        "pk": 335,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 488,
+            "name": "Duplo, Vehicle"
+        }
+    },
+    {
+        "pk": 336,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 489,
+            "name": "Classic Castle"
+        }
+    },
+    {
+        "pk": 337,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 490,
+            "name": "Clikits"
+        }
+    },
+    {
+        "pk": 338,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 491,
+            "name": "2003"
+        }
+    },
+    {
+        "pk": 339,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 495,
+            "name": "Outback"
+        }
+    },
+    {
+        "pk": 340,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 496,
+            "name": "Launch Command"
+        }
+    },
+    {
+        "pk": 341,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 497,
+            "name": "Inventor"
+        }
+    },
+    {
+        "pk": 342,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 498,
+            "name": "Luggage & Lunch Box"
+        }
+    },
+    {
+        "pk": 343,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 501,
+            "name": "Gravity Games"
+        }
+    },
+    {
+        "pk": 344,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 502,
+            "name": "World City"
+        }
+    },
+    {
+        "pk": 345,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 503,
+            "name": "Poster"
+        }
+    },
+    {
+        "pk": 346,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 504,
+            "name": "Motor, Non-Electric"
+        }
+    },
+    {
+        "pk": 347,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 505,
+            "name": "Story Book"
+        }
+    },
+    {
+        "pk": 348,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 506,
+            "name": "Duplo, Brick, Promotional"
+        }
+    },
+    {
+        "pk": 349,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 507,
+            "name": "Little Robots"
+        }
+    },
+    {
+        "pk": 350,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 508,
+            "name": "Explore Imagination"
+        }
+    },
+    {
+        "pk": 351,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 509,
+            "name": "Explore Being Me"
+        }
+    },
+    {
+        "pk": 352,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 510,
+            "name": "Explore Logic"
+        }
+    },
+    {
+        "pk": 353,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 511,
+            "name": "Explore Together"
+        }
+    },
+    {
+        "pk": 354,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 512,
+            "name": "Plush Toy"
+        }
+    },
+    {
+        "pk": 355,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 513,
+            "name": "Media Audio & Video"
+        }
+    },
+    {
+        "pk": 356,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 514,
+            "name": "Throwing Disk"
+        }
+    },
+    {
+        "pk": 357,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 515,
+            "name": "2004"
+        }
+    },
+    {
+        "pk": 358,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 516,
+            "name": "4 Juniors"
+        }
+    },
+    {
+        "pk": 359,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 517,
+            "name": "Watch"
+        }
+    },
+    {
+        "pk": 360,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 518,
+            "name": "City"
+        }
+    },
+    {
+        "pk": 361,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 521,
+            "name": "Photo Frame & Holder"
+        }
+    },
+    {
+        "pk": 362,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 522,
+            "name": "Hose, Ribbed 7mm D."
+        }
+    },
+    {
+        "pk": 363,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 523,
+            "name": "Dora the Explorer"
+        }
+    },
+    {
+        "pk": 364,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 524,
+            "name": "Duplo, Toolo"
+        }
+    },
+    {
+        "pk": 365,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 525,
+            "name": "Human Toiletries"
+        }
+    },
+    {
+        "pk": 366,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 526,
+            "name": "Retail Display Flag"
+        }
+    },
+    {
+        "pk": 367,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 527,
+            "name": "Hose, Soft Axle"
+        }
+    },
+    {
+        "pk": 368,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 528,
+            "name": "Hose, Rigid 3mm D."
+        }
+    },
+    {
+        "pk": 369,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 529,
+            "name": "Hose, Soft 3mm D."
+        }
+    },
+    {
+        "pk": 370,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 530,
+            "name": "Hose, Pneumatic 4mm D."
+        }
+    },
+    {
+        "pk": 371,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 532,
+            "name": "Wheel & Tire Assembly"
+        }
+    },
+    {
+        "pk": 372,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 534,
+            "name": "Brick, Promotional"
+        }
+    },
+    {
+        "pk": 373,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 535,
+            "name": "Brick, Modified, Decorated"
+        }
+    },
+    {
+        "pk": 374,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 536,
+            "name": "Knights Kingdom II"
+        }
+    },
+    {
+        "pk": 375,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 537,
+            "name": "Quatro"
+        }
+    },
+    {
+        "pk": 376,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 538,
+            "name": "Duplo, Tile, Decorated"
+        }
+    },
+    {
+        "pk": 377,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 539,
+            "name": "Retail Display"
+        }
+    },
+    {
+        "pk": 378,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 540,
+            "name": "Door Frame"
+        }
+    },
+    {
+        "pk": 379,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 542,
+            "name": "Technic, Shock Absorber"
+        }
+    },
+    {
+        "pk": 380,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 543,
+            "name": "Human Body Wear"
+        }
+    },
+    {
+        "pk": 381,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 544,
+            "name": "2005"
+        }
+    },
+    {
+        "pk": 382,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 545,
+            "name": "FIRST LEGO League"
+        }
+    },
+    {
+        "pk": 383,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 547,
+            "name": "Star Wars Episode 3"
+        }
+    },
+    {
+        "pk": 384,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 548,
+            "name": "Vikings"
+        }
+    },
+    {
+        "pk": 385,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 549,
+            "name": "Mission Deep Sea"
+        }
+    },
+    {
+        "pk": 386,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 550,
+            "name": "Mission Deep Freeze"
+        }
+    },
+    {
+        "pk": 387,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 551,
+            "name": "1964"
+        }
+    },
+    {
+        "pk": 388,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 552,
+            "name": "Coloring Book"
+        }
+    },
+    {
+        "pk": 389,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 553,
+            "name": "1963"
+        }
+    },
+    {
+        "pk": 390,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 554,
+            "name": "1962"
+        }
+    },
+    {
+        "pk": 391,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 555,
+            "name": "1961"
+        }
+    },
+    {
+        "pk": 392,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 556,
+            "name": "1960"
+        }
+    },
+    {
+        "pk": 393,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 557,
+            "name": "1959"
+        }
+    },
+    {
+        "pk": 394,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 558,
+            "name": "1958"
+        }
+    },
+    {
+        "pk": 395,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 559,
+            "name": "1957"
+        }
+    },
+    {
+        "pk": 396,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 560,
+            "name": "1956"
+        }
+    },
+    {
+        "pk": 397,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 561,
+            "name": "1955"
+        }
+    },
+    {
+        "pk": 398,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 562,
+            "name": "Thomas & Friends"
+        }
+    },
+    {
+        "pk": 399,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 563,
+            "name": "Dino Attack"
+        }
+    },
+    {
+        "pk": 400,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 564,
+            "name": "Collector Card"
+        }
+    },
+    {
+        "pk": 401,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 565,
+            "name": "2006"
+        }
+    },
+    {
+        "pk": 402,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 566,
+            "name": "Factory"
+        }
+    },
+    {
+        "pk": 403,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 567,
+            "name": "Dino 2010"
+        }
+    },
+    {
+        "pk": 404,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 568,
+            "name": "Exo-Force"
+        }
+    },
+    {
+        "pk": 405,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 569,
+            "name": "Large Figure Part"
+        }
+    },
+    {
+        "pk": 406,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 570,
+            "name": "Batman I"
+        }
+    },
+    {
+        "pk": 407,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 571,
+            "name": "Tiny Turbos"
+        }
+    },
+    {
+        "pk": 408,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 572,
+            "name": "Legoland Parks"
+        }
+    },
+    {
+        "pk": 409,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 573,
+            "name": "SpongeBob SquarePants"
+        }
+    },
+    {
+        "pk": 410,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 574,
+            "name": "Avatar"
+        }
+    },
+    {
+        "pk": 411,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 575,
+            "name": "Clikits, Icon"
+        }
+    },
+    {
+        "pk": 412,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 576,
+            "name": "Curriculum Activity Book"
+        }
+    },
+    {
+        "pk": 413,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 577,
+            "name": "RC Train"
+        }
+    },
+    {
+        "pk": 414,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 578,
+            "name": "Wedge, Decorated"
+        }
+    },
+    {
+        "pk": 415,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 579,
+            "name": "Windscreen, Decorated"
+        }
+    },
+    {
+        "pk": 416,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 580,
+            "name": "Aquaraiders II"
+        }
+    },
+    {
+        "pk": 417,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 581,
+            "name": "2007"
+        }
+    },
+    {
+        "pk": 418,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 582,
+            "name": "Sticker Over Assembly"
+        }
+    },
+    {
+        "pk": 419,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 583,
+            "name": "Wedge, Plate"
+        }
+    },
+    {
+        "pk": 420,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 585,
+            "name": "Duplo, Figure Wear & Utensil"
+        }
+    },
+    {
+        "pk": 421,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 586,
+            "name": "Play Wear & Weaponry"
+        }
+    },
+    {
+        "pk": 422,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 587,
+            "name": "Dolls"
+        }
+    },
+    {
+        "pk": 423,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 588,
+            "name": "Harbor"
+        }
+    },
+    {
+        "pk": 424,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 589,
+            "name": "Safari"
+        }
+    },
+    {
+        "pk": 425,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 590,
+            "name": "Classic Basic"
+        }
+    },
+    {
+        "pk": 426,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 592,
+            "name": "Mars Mission"
+        }
+    },
+    {
+        "pk": 427,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 593,
+            "name": "Fantasy Era"
+        }
+    },
+    {
+        "pk": 428,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 594,
+            "name": "Puzzle Book"
+        }
+    },
+    {
+        "pk": 429,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 596,
+            "name": "Construction"
+        }
+    },
+    {
+        "pk": 430,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 597,
+            "name": "Gas Station"
+        }
+    },
+    {
+        "pk": 431,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 598,
+            "name": "Race"
+        }
+    },
+    {
+        "pk": 432,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 599,
+            "name": "Traffic"
+        }
+    },
+    {
+        "pk": 433,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 600,
+            "name": "Town Plan"
+        }
+    },
+    {
+        "pk": 434,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 601,
+            "name": "2008"
+        }
+    },
+    {
+        "pk": 435,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 604,
+            "name": "Coin"
+        }
+    },
+    {
+        "pk": 436,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 605,
+            "name": "Indiana Jones"
+        }
+    },
+    {
+        "pk": 437,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 606,
+            "name": "Minifig, Head, Modified"
+        }
+    },
+    {
+        "pk": 438,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 607,
+            "name": "Star Wars Other"
+        }
+    },
+    {
+        "pk": 439,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 608,
+            "name": "Speed Racer"
+        }
+    },
+    {
+        "pk": 440,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 609,
+            "name": "Agents"
+        }
+    },
+    {
+        "pk": 441,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 610,
+            "name": "Coast Guard"
+        }
+    },
+    {
+        "pk": 442,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 611,
+            "name": "Basic Set"
+        }
+    },
+    {
+        "pk": 443,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 612,
+            "name": "Duplo, Town"
+        }
+    },
+    {
+        "pk": 444,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 613,
+            "name": "Playhouse"
+        }
+    },
+    {
+        "pk": 445,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 614,
+            "name": "Princess Castle"
+        }
+    },
+    {
+        "pk": 446,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 617,
+            "name": "Dino"
+        }
+    },
+    {
+        "pk": 447,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 618,
+            "name": "Cargo"
+        }
+    },
+    {
+        "pk": 448,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 619,
+            "name": "Robot"
+        }
+    },
+    {
+        "pk": 449,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 620,
+            "name": "Ferrari"
+        }
+    },
+    {
+        "pk": 450,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 622,
+            "name": "Xalax"
+        }
+    },
+    {
+        "pk": 451,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 623,
+            "name": "X-Pod"
+        }
+    },
+    {
+        "pk": 452,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 624,
+            "name": "Circus"
+        }
+    },
+    {
+        "pk": 453,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 625,
+            "name": "Lego Brand Store"
+        }
+    },
+    {
+        "pk": 454,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 626,
+            "name": "Town Jr."
+        }
+    },
+    {
+        "pk": 455,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 627,
+            "name": "Classic Town"
+        }
+    },
+    {
+        "pk": 456,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 628,
+            "name": "1950"
+        }
+    },
+    {
+        "pk": 457,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 629,
+            "name": "Architecture"
+        }
+    },
+    {
+        "pk": 458,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 630,
+            "name": "NXT"
+        }
+    },
+    {
+        "pk": 459,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 631,
+            "name": "RCX"
+        }
+    },
+    {
+        "pk": 460,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 632,
+            "name": "Special Element Sets"
+        }
+    },
+    {
+        "pk": 461,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 633,
+            "name": "Control Lab"
+        }
+    },
+    {
+        "pk": 462,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 634,
+            "name": "WeDo"
+        }
+    },
+    {
+        "pk": 463,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 635,
+            "name": "Star Wars Clone Wars"
+        }
+    },
+    {
+        "pk": 464,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 636,
+            "name": "Minifig, Headgear Accessory"
+        }
+    },
+    {
+        "pk": 465,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 637,
+            "name": "Wooden Box Set"
+        }
+    },
+    {
+        "pk": 466,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 638,
+            "name": "Technic, Disk"
+        }
+    },
+    {
+        "pk": 467,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 639,
+            "name": "Duplo, Boat"
+        }
+    },
+    {
+        "pk": 468,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 640,
+            "name": "Duplo, Aircraft"
+        }
+    },
+    {
+        "pk": 469,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 641,
+            "name": "Duplo, Furniture"
+        }
+    },
+    {
+        "pk": 470,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 642,
+            "name": "Door, Decorated"
+        }
+    },
+    {
+        "pk": 471,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 643,
+            "name": "Container, Decorated"
+        }
+    },
+    {
+        "pk": 472,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 645,
+            "name": "Early Toy"
+        }
+    },
+    {
+        "pk": 473,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 646,
+            "name": "Electronics"
+        }
+    },
+    {
+        "pk": 474,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 647,
+            "name": "2009"
+        }
+    },
+    {
+        "pk": 475,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 648,
+            "name": "Bedding"
+        }
+    },
+    {
+        "pk": 476,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 649,
+            "name": "Barraki"
+        }
+    },
+    {
+        "pk": 477,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 650,
+            "name": "Bohrok"
+        }
+    },
+    {
+        "pk": 478,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 651,
+            "name": "Bohrok Va"
+        }
+    },
+    {
+        "pk": 479,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 652,
+            "name": "Bohrok-Kal"
+        }
+    },
+    {
+        "pk": 480,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 653,
+            "name": "Matoran of Light"
+        }
+    },
+    {
+        "pk": 481,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 654,
+            "name": "Matoran of Mahri Nui"
+        }
+    },
+    {
+        "pk": 482,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 655,
+            "name": "Matoran of Mata Nui"
+        }
+    },
+    {
+        "pk": 483,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 656,
+            "name": "Matoran of Metru Nui"
+        }
+    },
+    {
+        "pk": 484,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 657,
+            "name": "Matoran of Voya Nui"
+        }
+    },
+    {
+        "pk": 485,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 658,
+            "name": "Mistika"
+        }
+    },
+    {
+        "pk": 486,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 659,
+            "name": "Phantoka"
+        }
+    },
+    {
+        "pk": 487,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 660,
+            "name": "Piraka"
+        }
+    },
+    {
+        "pk": 488,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 661,
+            "name": "Playsets"
+        }
+    },
+    {
+        "pk": 489,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 662,
+            "name": "Rahaga"
+        }
+    },
+    {
+        "pk": 490,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 663,
+            "name": "Rahi"
+        }
+    },
+    {
+        "pk": 491,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 664,
+            "name": "Rahkshi"
+        }
+    },
+    {
+        "pk": 492,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 665,
+            "name": "Titans"
+        }
+    },
+    {
+        "pk": 493,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 667,
+            "name": "Warriors"
+        }
+    },
+    {
+        "pk": 494,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 668,
+            "name": "Toa"
+        }
+    },
+    {
+        "pk": 495,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 669,
+            "name": "Toa Hagah"
+        }
+    },
+    {
+        "pk": 496,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 670,
+            "name": "Toa Hordika"
+        }
+    },
+    {
+        "pk": 497,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 671,
+            "name": "Toa Inika"
+        }
+    },
+    {
+        "pk": 498,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 672,
+            "name": "Toa Mahri"
+        }
+    },
+    {
+        "pk": 499,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 673,
+            "name": "Toa Metru"
+        }
+    },
+    {
+        "pk": 500,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 674,
+            "name": "Toa Nuva"
+        }
+    },
+    {
+        "pk": 501,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 675,
+            "name": "Tohunga"
+        }
+    },
+    {
+        "pk": 502,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 676,
+            "name": "Turaga"
+        }
+    },
+    {
+        "pk": 503,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 677,
+            "name": "Vahki"
+        }
+    },
+    {
+        "pk": 504,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 678,
+            "name": "Visorak"
+        }
+    },
+    {
+        "pk": 505,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 679,
+            "name": "Fast Food Toy"
+        }
+    },
+    {
+        "pk": 506,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 680,
+            "name": "Basic Model"
+        }
+    },
+    {
+        "pk": 507,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 682,
+            "name": "Model"
+        }
+    },
+    {
+        "pk": 508,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 683,
+            "name": "Glued Model"
+        }
+    },
+    {
+        "pk": 509,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 685,
+            "name": "Farm"
+        }
+    },
+    {
+        "pk": 510,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 686,
+            "name": "Recreation"
+        }
+    },
+    {
+        "pk": 511,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 687,
+            "name": "Pirates II"
+        }
+    },
+    {
+        "pk": 512,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 688,
+            "name": "Pirates I"
+        }
+    },
+    {
+        "pk": 513,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 689,
+            "name": "Power Miners"
+        }
+    },
+    {
+        "pk": 514,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 690,
+            "name": "Glatorian"
+        }
+    },
+    {
+        "pk": 515,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 691,
+            "name": "Power Racers"
+        }
+    },
+    {
+        "pk": 516,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 693,
+            "name": "Williams F1"
+        }
+    },
+    {
+        "pk": 517,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 694,
+            "name": "My Own Train"
+        }
+    },
+    {
+        "pk": 518,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 695,
+            "name": "Sorcerer's Stone"
+        }
+    },
+    {
+        "pk": 519,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 696,
+            "name": "Chamber of Secrets"
+        }
+    },
+    {
+        "pk": 520,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 697,
+            "name": "Prisoner of Azkaban"
+        }
+    },
+    {
+        "pk": 521,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 698,
+            "name": "Goblet of Fire"
+        }
+    },
+    {
+        "pk": 522,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 699,
+            "name": "Order of the Phoenix"
+        }
+    },
+    {
+        "pk": 523,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 700,
+            "name": "Kingdom of the Crystal Skull"
+        }
+    },
+    {
+        "pk": 524,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 701,
+            "name": "Raiders of the Lost Ark"
+        }
+    },
+    {
+        "pk": 525,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 702,
+            "name": "Temple of Doom"
+        }
+    },
+    {
+        "pk": 526,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 703,
+            "name": "Last Crusade"
+        }
+    },
+    {
+        "pk": 527,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 704,
+            "name": "Golden Land"
+        }
+    },
+    {
+        "pk": 528,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 705,
+            "name": "Spider-Man 1"
+        }
+    },
+    {
+        "pk": 529,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 706,
+            "name": "Spider-Man 2"
+        }
+    },
+    {
+        "pk": 530,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 707,
+            "name": "Duplo, Doll"
+        }
+    },
+    {
+        "pk": 531,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 710,
+            "name": "Modular Buildings"
+        }
+    },
+    {
+        "pk": 532,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 711,
+            "name": "Agori"
+        }
+    },
+    {
+        "pk": 533,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 712,
+            "name": "Video Game"
+        }
+    },
+    {
+        "pk": 534,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 713,
+            "name": "Space Police III"
+        }
+    },
+    {
+        "pk": 535,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 714,
+            "name": "Advent"
+        }
+    },
+    {
+        "pk": 536,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 715,
+            "name": "Advent Sub-Set"
+        }
+    },
+    {
+        "pk": 537,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 719,
+            "name": "Zooters"
+        }
+    },
+    {
+        "pk": 538,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 720,
+            "name": "Drome Racers"
+        }
+    },
+    {
+        "pk": 539,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 721,
+            "name": "Power Functions"
+        }
+    },
+    {
+        "pk": 540,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 722,
+            "name": "Disney's Baby Mickey"
+        }
+    },
+    {
+        "pk": 541,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 723,
+            "name": "Lamborghini"
+        }
+    },
+    {
+        "pk": 542,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 724,
+            "name": "Glatorian Legends"
+        }
+    },
+    {
+        "pk": 543,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 725,
+            "name": "Battle Vehicles"
+        }
+    },
+    {
+        "pk": 544,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 726,
+            "name": "Creature"
+        }
+    },
+    {
+        "pk": 545,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 727,
+            "name": "Modulex"
+        }
+    },
+    {
+        "pk": 546,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 728,
+            "name": "Modulex, Tile, Decorated"
+        }
+    },
+    {
+        "pk": 547,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 729,
+            "name": "Modulex, Brick"
+        }
+    },
+    {
+        "pk": 548,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 730,
+            "name": "Modulex, Window"
+        }
+    },
+    {
+        "pk": 549,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 731,
+            "name": "Ben 10"
+        }
+    },
+    {
+        "pk": 550,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 732,
+            "name": "Toy Story"
+        }
+    },
+    {
+        "pk": 551,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 733,
+            "name": "Atlantis"
+        }
+    },
+    {
+        "pk": 552,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 734,
+            "name": "Prince of Persia"
+        }
+    },
+    {
+        "pk": 553,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 735,
+            "name": "Electric, Wire & Connector"
+        }
+    },
+    {
+        "pk": 554,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 736,
+            "name": "Brick, Round, Decorated"
+        }
+    },
+    {
+        "pk": 555,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 738,
+            "name": "Flag, Decorated"
+        }
+    },
+    {
+        "pk": 556,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 740,
+            "name": "Technic, Panel, Decorated"
+        }
+    },
+    {
+        "pk": 557,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 741,
+            "name": "Tail, Decorated"
+        }
+    },
+    {
+        "pk": 558,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 742,
+            "name": "Stars"
+        }
+    },
+    {
+        "pk": 559,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 743,
+            "name": "2010"
+        }
+    },
+    {
+        "pk": 560,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 744,
+            "name": "Kingdoms"
+        }
+    },
+    {
+        "pk": 561,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 745,
+            "name": "Building Event Instructions"
+        }
+    },
+    {
+        "pk": 562,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 746,
+            "name": "Collectible Minifigures"
+        }
+    },
+    {
+        "pk": 563,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 747,
+            "name": "World Racers"
+        }
+    },
+    {
+        "pk": 564,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 748,
+            "name": "Cars"
+        }
+    },
+    {
+        "pk": 565,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 749,
+            "name": "Hero Factory"
+        }
+    },
+    {
+        "pk": 566,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 750,
+            "name": "Heroes"
+        }
+    },
+    {
+        "pk": 567,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 751,
+            "name": "Villains"
+        }
+    },
+    {
+        "pk": 568,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 752,
+            "name": "Vehicles"
+        }
+    },
+    {
+        "pk": 569,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 753,
+            "name": "Series 1 Minifigures"
+        }
+    },
+    {
+        "pk": 570,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 754,
+            "name": "Series 2 Minifigures"
+        }
+    },
+    {
+        "pk": 571,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 755,
+            "name": "Universe"
+        }
+    },
+    {
+        "pk": 572,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 756,
+            "name": "2011"
+        }
+    },
+    {
+        "pk": 573,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 757,
+            "name": "Pharaoh's Quest"
+        }
+    },
+    {
+        "pk": 574,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 758,
+            "name": "Series 3 Minifigures"
+        }
+    },
+    {
+        "pk": 575,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 759,
+            "name": "Ninjago"
+        }
+    },
+    {
+        "pk": 576,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 760,
+            "name": "Series 4 Minifigures"
+        }
+    },
+    {
+        "pk": 577,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 761,
+            "name": "Pirates of the Caribbean"
+        }
+    },
+    {
+        "pk": 578,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 762,
+            "name": "Alien Conquest"
+        }
+    },
+    {
+        "pk": 579,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 763,
+            "name": "Heroica"
+        }
+    },
+    {
+        "pk": 580,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 764,
+            "name": "Master Builder Academy"
+        }
+    },
+    {
+        "pk": 581,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 765,
+            "name": "Series 5 Minifigures"
+        }
+    },
+    {
+        "pk": 582,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 766,
+            "name": "Activity Book"
+        }
+    },
+    {
+        "pk": 583,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 767,
+            "name": "2012"
+        }
+    },
+    {
+        "pk": 584,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 768,
+            "name": "Super Heroes"
+        }
+    },
+    {
+        "pk": 585,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 769,
+            "name": "Batman II"
+        }
+    },
+    {
+        "pk": 586,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 770,
+            "name": "Series 6 Minifigures"
+        }
+    },
+    {
+        "pk": 587,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 771,
+            "name": "Friends"
+        }
+    },
+    {
+        "pk": 588,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 772,
+            "name": "Planet Series 1"
+        }
+    },
+    {
+        "pk": 589,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 773,
+            "name": "Disney Princess"
+        }
+    },
+    {
+        "pk": 590,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 774,
+            "name": "Series 7 Minifigures"
+        }
+    },
+    {
+        "pk": 591,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 775,
+            "name": "Slope, Curved, Decorated"
+        }
+    },
+    {
+        "pk": 592,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 776,
+            "name": "Slope, Inverted, Decorated"
+        }
+    },
+    {
+        "pk": 593,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 777,
+            "name": "Technic, Liftarm, Decorated"
+        }
+    },
+    {
+        "pk": 594,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 778,
+            "name": "Tile, Modified, Decorated"
+        }
+    },
+    {
+        "pk": 595,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 779,
+            "name": "Dish, Decorated"
+        }
+    },
+    {
+        "pk": 596,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 780,
+            "name": "Vehicle, Mudguard, Decorated"
+        }
+    },
+    {
+        "pk": 597,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 781,
+            "name": "Monster Fighters"
+        }
+    },
+    {
+        "pk": 598,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 782,
+            "name": "Lord of the Rings"
+        }
+    },
+    {
+        "pk": 599,
+        "model": "inventory.category",
+        "fields": {
+            "category_id": 783,
+            "name": "Planet Series 2"
+        }
+    }
+]
