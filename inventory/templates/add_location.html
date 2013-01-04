@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block h1 %}Add Location{% endblock %}
+
+{% block content %}
+
+<div id="form_container">
+    <form action="{% url inventory.views.add_location %}" method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        {{ location_form.name.errors }}
+        {{ location_form.parent.errors }}
+        <p>{{ location_form.name }} in {{ location_form.parent }} </p>
+        <p>
+            <input class="submit" type="submit" name="submit" value="Submit" />
+            <input class="submit" type="submit" name="add_another" value="Submit and Add Another" />
+        </p>
+    </form>
+</div>
+
+{% endblock %}
+

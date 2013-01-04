@@ -24,6 +24,10 @@ class InventoryForm(forms.Form):
             raise forms.ValidationError("Specified part does not exist")
         return data
 
+class LocationForm(forms.ModelForm):
+    class Meta:
+        model = Location
+
 class KeywordForm(forms.ModelForm):
     class Meta:
         model = KeywordValue

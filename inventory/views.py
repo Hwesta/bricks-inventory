@@ -6,7 +6,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
 # From Inventory
-from inventory.forms import InventoryForm, KeywordForm
+from inventory.forms import InventoryForm, LocationForm, KeywordForm
 from inventory.models import Part, Category, Color, PartInstance, Set
 from inventory.models import Inventory, Location, LocationAmount, Keyword, KeywordValue
 
@@ -56,3 +56,20 @@ def add_inventory(request):
          'location_formset': location_formset
         })
 
+
+def add_location(request):
+    """ Adds a location. """
+    if request.method == 'POST':
+        location_form = LocationForm(request.POST)
+        if location_form.is_valid():
+            new_loc = location_form.save()
+            messages.success(request, "%s added." % new_loc.name)
+            if 'add_another' in request.POST:
+                return HttpResponseRedirect(reverse(add_location))
+            else:
+                return HttpResponseRedirect(reverse(index))
+    else:
+        location_form = LocationForm()
+    return render(request, 'add_location.html',
+        {'location_form': location_form,
+        })
