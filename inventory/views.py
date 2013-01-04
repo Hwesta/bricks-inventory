@@ -73,3 +73,20 @@ def add_location(request):
     return render(request, 'add_location.html',
         {'location_form': location_form,
         })
+
+def add_keyword(request):
+    """ Adds a new keyword. """
+    if request.method == 'POST':
+        keyword_form = KeywordForm(request.POST)
+        if keyword_form.is_valid():
+            new_kw = keyword_form.save()
+            messages.success(request, "Keyword %s added." % new_kw.name)
+            if 'add_another' in request.POST:
+                return HttpResponseRedirect(reverse(add_keyword))
+            else:
+                return HttpResponseRedirect(reverse(index))
+    else:
+        keyword_form = KeywordForm()
+    return render(request, 'add_keyword.html',
+        {'keyword_form': keyword_form,
+        })

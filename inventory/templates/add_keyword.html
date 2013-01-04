@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block h1 %}Add Keyword{% endblock %}
+
+{% block content %}
+
+<div id="form_container">
+    <form action="{% url inventory.views.add_keyword %}" method="post">
+        {% csrf_token %}
+        <p>{{ keyword_form.as_p }}</p>
+        <p>
+            <input class="submit" type="submit" name="submit" value="Submit" />
+            <input class="submit" type="submit" name="add_another" value="Submit and Add Another" />
+        </p>
+    </form>
+</div>
+
+{% endblock %}
+

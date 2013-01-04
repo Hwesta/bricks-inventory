@@ -17,5 +17,6 @@ urlpatterns = patterns('',
     url(r'^$', 'inventory.views.index'),
     url(r'^add/inventory/', 'inventory.views.add_inventory'),
     url(r'^add/location/', 'inventory.views.add_location'),
+    url(r'^add/keyword/', 'inventory.views.add_keyword'),
 
 )

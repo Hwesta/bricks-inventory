@@ -27,8 +27,9 @@ class InventoryForm(forms.Form):
 class LocationForm(forms.ModelForm):
     class Meta:
         model = Location
+        fields = ('name', 'parent')
 
 class KeywordForm(forms.ModelForm):
     class Meta:
-        model = KeywordValue
-        fields = ('keyword', 'value')
+        model = Keyword
+        fields = ('name',)
