@@ -13,9 +13,13 @@
         </fieldset>
         <fieldset>
             <legend>Location</legend>
+            {% comment %} TODO Hide the extra forms with Javascript until the user asks for them. {% endcomment %}
             {{ location_formset.management_form }}
             {% for l in location_formset%}
-            {{ l.as_p }}
+                {{ l.non_field_errors }}
+                {{ l.location.errors }}
+                {{ l.amount.errors }}
+                <p>{{ l.amount }} pieces in {{ l.location }}</p>
             {% endfor %}
         </fieldset>
         <fieldset>
@@ -26,7 +30,7 @@
             {% endfor %}
         </fieldset>
             <p>
-                <input  class="submit"  type="submit" value="Submit" />
+                <input class="submit" type="submit" value="Submit" />
             </p>
     </form>
 </div>

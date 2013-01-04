@@ -47,8 +47,8 @@ def add_inventory(request):
             return HttpResponseRedirect(reverse(index))
     else:
         inventory_form = InventoryForm(prefix="inv")
-        location_formset = LocationFormSet(prefix = "loc", queryset = LocationAmount.objects.none())
-        # KeywordFormSet = modelformset_factory(KeywordValue)
+        location_formset = LocationFormSet(prefix = "loc",
+            queryset = LocationAmount.objects.none())
         # kw_formset = KeywordFormSet(queryset=Keyword.objects.all(), prefix="kw")
     return render(request, 'add_inventory.html',
         {'inventory_form': inventory_form,
