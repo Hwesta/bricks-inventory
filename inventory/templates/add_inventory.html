@@ -13,13 +13,15 @@
         </fieldset>
         <fieldset>
             <legend>Location</legend>
+            {{ location_formset.management_form }}
             {% for l in location_formset%}
-            {{ l }}
+            {{ l.as_p }}
             {% endfor %}
         </fieldset>
         <fieldset>
             <legend>Keywords</legend>
-            {% for k in keywords_formset%}
+            {{ kw_formset.management_form }}
+            {% for k in kw_formset %}
             {{ k }}
             {% endfor %}
         </fieldset>

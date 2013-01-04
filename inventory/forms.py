@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import ModelForm
 from inventory.models import Part, Category, Color, PartInstance, Set
-from inventory.models import Inventory, Location, Keyword, KeywordValue
+from inventory.models import Inventory, Location, LocationAmount, Keyword, KeywordValue
 
 
 # Form should enter:
@@ -15,7 +15,6 @@ from inventory.models import Inventory, Location, Keyword, KeywordValue
 class InventoryForm(forms.Form):
     part = forms.CharField()
     color = forms.ModelChoiceField(queryset=Color.objects.all())
-    count = forms.IntegerField(min_value=1)
 
     def clean_part(self):
         data = self.cleaned_data['part']

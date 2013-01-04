@@ -34,6 +34,7 @@ class Color(models.Model):
     def __unicode__(self):
         return unicode(self.color_id)+"-"+self.name
 
+# Do we need this?  Just have Inventory link to a Color and Part
 class PartInstance(models.Model): # existant part in specific color aka Code
     color = models.ForeignKey('Color', to_field='color_id')
     part = models.ForeignKey('Part', to_field='part_id')
@@ -56,13 +57,12 @@ class Set(models.Model):
     
 class Inventory(models.Model):
     partinstance = models.ForeignKey('PartInstance')
-    count = models.IntegerField()
-    location = models.ManyToManyField('Location')
+    location = models.ManyToManyField('Location', through = "LocationAmount")
     keywords = models.ManyToManyField('Keyword', through='KeywordValue')
     deleted = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return unicode(self.count)+"x"+unicode(self.partinstance)
+        return unicode(self.partinstance) + " tracker"
 
 class Location(models.Model):
     name = models.CharField(max_length=256)
@@ -70,6 +70,16 @@ class Location(models.Model):
 
     def __unicode__(self):
         return self.name;
+
+class LocationAmount(models.Model):
+    inventory = models.ForeignKey('Inventory')
+    location = models.ForeignKey('Location')
+    amount = models.IntegerField()
+
+    def __unicode__(self):
+        return unicode(self.amount) \
+             + " pieces of " + unicode(self.inventory.partinstance) \
+             + " in " + unicode(self.location)
 
 class Keyword(models.Model):
     name = models.CharField(max_length=256)
@@ -85,7 +95,3 @@ class KeywordValue(models.Model):
 
     def __unicode__(self):
         return self.inventory+" "+self.keyword+" "+self.value
-    
-
-
-
