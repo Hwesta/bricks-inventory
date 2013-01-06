@@ -26,7 +26,7 @@
             <legend>Keywords</legend>
             {{ kw_formset.management_form }}
             {% for k in kw_formset %}
-            {{ k }}
+            <p>Keyword: {{ k.keyword }} Value: {{ k.value }}</p>
             {% endfor %}
         </fieldset>
             <p>

@@ -18,12 +18,16 @@ def add_inventory(request):
     LocationFormSet = modelformset_factory(LocationAmount,
         fields = ('location', 'amount'),
         extra=3)
+    KeywordFormSet = modelformset_factory(KeywordValue,
+        fields = ('keyword', 'value'),
+        extra = Keyword.objects.count())
 
     if request.method == 'POST':
         inventory_form = InventoryForm(request.POST, prefix="inv")
         location_formset = LocationFormSet(request.POST, prefix = "loc")
-        # kw_form = KeywordForm(request.POST, prefix="kw")
-        if inventory_form.is_valid() and location_formset.is_valid():
+        kw_formset = KeywordFormSet(request.POST, prefix="kw")
+        if inventory_form.is_valid() and location_formset.is_valid() \
+                and kw_formset.is_valid():
             # Is there an easier way to do this with an Inventory ModelForm?
             part_str = inventory_form.cleaned_data['part']
             color = inventory_form.cleaned_data['color']
@@ -39,21 +43,27 @@ def add_inventory(request):
             print "inventory", inventory
             inventory.save()
 
-            instances = location_formset.save(commit = False)
-            for i in instances:
+            def add_inventory_to_formset(i):
                 i.inventory = inventory
                 i.save()
+
+            instances = location_formset.save(commit = False)
+            map(add_inventory_to_formset, instances)
+
+            instances = kw_formset.save(commit = False)
+            map(add_inventory_to_formset, instances)
 
             return HttpResponseRedirect(reverse(index))
     else:
         inventory_form = InventoryForm(prefix="inv")
         location_formset = LocationFormSet(prefix = "loc",
             queryset = LocationAmount.objects.none())
-        # kw_formset = KeywordFormSet(queryset=Keyword.objects.all(), prefix="kw")
+        kw_formset = KeywordFormSet(prefix="kw",
+            queryset=Keyword.objects.none())
     return render(request, 'add_inventory.html',
         {'inventory_form': inventory_form,
-         # 'kw_formset': kw_formset,
-         'location_formset': location_formset
+         'location_formset': location_formset,
+         'kw_formset': kw_formset,
         })
 
 

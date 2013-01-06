@@ -94,4 +94,4 @@ class KeywordValue(models.Model):
     deleted = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return self.inventory+" "+self.keyword+" "+self.value
+        return "%s %s %s" % (self.inventory, self.keyword, self.value)
