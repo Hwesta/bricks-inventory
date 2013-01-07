@@ -19,4 +19,7 @@ urlpatterns = patterns('',
     url(r'^add/location/', 'inventory.views.add_location'),
     url(r'^add/keyword/', 'inventory.views.add_keyword'),
 
+    url(r'^inventory/$', 'inventory.views.view_inventory'),
+    url(r'^inventory/(\d+)$', 'inventory.views.view_inventory_item'),
+
 )

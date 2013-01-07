@@ -100,3 +100,14 @@ def add_keyword(request):
     return render(request, 'add_keyword.html',
         {'keyword_form': keyword_form,
         })
+
+def view_inventory(request):
+    items = Inventory.objects.filter(deleted=False)
+    return render(request, 'view_inventory.html',
+        {'items': items})
+
+def view_inventory_item(request, inventory_id):
+    inventory = Inventory.objects.get(pk=inventory_id)
+
+    return render(request, 'view_inventory_item.html',
+        {'inventory': inventory,})

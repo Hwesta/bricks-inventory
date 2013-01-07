@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block h1 %}View Inventory{% endblock %}
+
+{% block content %}
+
+<table>
+  <tr>
+    <th>Part</th>
+    <th>Color</th>
+    <th>Amount</th>
+  </tr>
+{% for i in items %}
+  <tr>
+    <td><a href="{% url inventory.views.view_inventory_item i.id %}">{{ i.partinstance.part }}</a></td>
+    <td>{{ i.partinstance.color }}</td>
+    <td></td>
+  </tr>
+{% endfor %}
+</table>
+
+{% endblock %}
+

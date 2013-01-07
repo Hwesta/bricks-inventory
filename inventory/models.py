@@ -32,7 +32,7 @@ class Color(models.Model):
     year_to = models.IntegerField(null=True, blank=True)
 
     def __unicode__(self):
-        return unicode(self.color_id)+"-"+self.name
+        return self.name
 
 # Do we need this?  Just have Inventory link to a Color and Part
 class PartInstance(models.Model): # existant part in specific color aka Code

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block h1 %}View Inventory{% endblock %}
+
+{% block content %}
+
+<p>{{ inventory.partinstance }}</p>
+{% for l in inventory.location.all %}
+<p>{{ l }}</p>
+{% endfor %}
+{% endblock %}
+
