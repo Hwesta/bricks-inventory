@@ -1,12 +1,22 @@
 {% extends "base.html" %}
 
-{% block h1 %}View Inventory{% endblock %}
+{% block h1 %}View {{ inventory.partinstance.color }} {{ inventory.partinstance.part.name }}{% endblock %}
 
 {% block content %}
 
-<p>{{ inventory.partinstance }}</p>
-{% for l in inventory.location.all %}
-<p>{{ l }}</p>
+<h2>Storage</h2>
+{% for l in inventory.locationamount_set.all %}
+<p>{{ l.amount }} pieces in {{ l.location }}</p>
 {% endfor %}
+
+<h2>Keywords</h2>
+{% if inventory.keywordvalue_set.all %}
+    {% for k in inventory.keywordvalue_set.all %}
+    <p>{{ k.keyword }}: {{ k.value }}</p>
+    {% endfor %}
+{% else %}
+<p>No keywords for this item.</p>
+{% endif %}
+
 {% endblock %}
 
