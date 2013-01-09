@@ -10,13 +10,11 @@
 {% endfor %}
 
 <h2>Keywords</h2>
-{% if inventory.keywordvalue_set.all %}
-    {% for k in inventory.keywordvalue_set.all %}
-    <p>{{ k.keyword }}: {{ k.value }}</p>
-    {% endfor %}
-{% else %}
+{% for k in inventory.keywordvalue_set.all %}
+<p>{{ k.keyword }}: {{ k.value }}</p>
+{% empty %}
 <p>No keywords for this item.</p>
-{% endif %}
+{% endfor %}
 
 {% endblock %}
 
