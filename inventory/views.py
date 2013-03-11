@@ -73,10 +73,12 @@ def check_location(request):
     if request.method == 'GET':
         if request.GET.has_key('part_id'):
             part_id = request.GET['part_id']
+            color = request.GET['color']
             # check for stuff
             similar_items = LocationAmount.objects.filter(inventory__partinstance__part__part_id__iexact=part_id)
-            #results = similar_items.values('inventory__partinstance', 'location__name', 'amount')
-            #results = serializers.serialize('json', similar_items)
+            if color: # Color might not be specified
+                similar_items = similar_items.filter(inventory__partinstance__color__pk=color)
+            # Include all display information in JSON
             for i in similar_items.iterator():
                 return_dict = {}
                 return_dict['amount'] = i.amount
@@ -91,7 +93,6 @@ def check_location(request):
                     }
 
                 results.append(return_dict)
-    print 'results', results
     results = simplejson.dumps(results)
     return HttpResponse(results, mimetype='application/json')
 

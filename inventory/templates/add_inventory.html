@@ -4,8 +4,8 @@
 
 {% block header %}
 <script type="text/javascript">
-function check_location(partid) {
-  $.getJSON("/check_location/", { part_id: partid },
+function check_location(partid, color) {
+  $.getJSON("/check_location/", { part_id: partid, color: color },
     function(json)
     {
       $("#other_locations").empty();
@@ -17,7 +17,12 @@ function check_location(partid) {
     });
 }
 function addClickHandlers() {
-  $("#check").click( function() { check_location("x70") } );
+  $("#check").click( function()
+    {
+      var part_id = $("#id_inv-part").val();
+      var color = $("#id_inv-color").val();
+      check_location(part_id, color);
+    });
 }
 $(document).ready(addClickHandlers);
 </script>
