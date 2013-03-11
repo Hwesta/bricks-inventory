@@ -1,9 +1,11 @@
 # From Django (alphabetical)
 from django.contrib import messages
+from django.core import serializers
 from django.core.urlresolvers import reverse
 from django.forms.models import modelformset_factory
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
+from django.utils import simplejson
 
 # From Inventory
 from inventory.forms import InventoryForm, LocationForm, KeywordForm
@@ -66,6 +68,32 @@ def add_inventory(request):
          'kw_formset': kw_formset,
         })
 
+def check_location(request):
+    results = []
+    if request.method == 'GET':
+        if request.GET.has_key('part_id'):
+            part_id = request.GET['part_id']
+            # check for stuff
+            similar_items = LocationAmount.objects.filter(inventory__partinstance__part__part_id__iexact=part_id)
+            #results = similar_items.values('inventory__partinstance', 'location__name', 'amount')
+            #results = serializers.serialize('json', similar_items)
+            for i in similar_items.iterator():
+                return_dict = {}
+                return_dict['amount'] = i.amount
+                return_dict['inventory'] = {
+                    'part_name': i.inventory.partinstance.part.name,
+                    'part_id': i.inventory.partinstance.part.part_id,
+                    'color': i.inventory.partinstance.color.name,
+                    }
+                return_dict['location'] = {
+                    'name': i.location.name,
+                    'pk': i.location.pk
+                    }
+
+                results.append(return_dict)
+    print 'results', results
+    results = simplejson.dumps(results)
+    return HttpResponse(results, mimetype='application/json')
 
 def add_location(request):
     """ Adds a location. """

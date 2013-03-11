@@ -22,4 +22,5 @@ urlpatterns = patterns('',
     url(r'^inventory/$', 'inventory.views.view_inventory'),
     url(r'^inventory/(\d+)$', 'inventory.views.view_inventory_item'),
 
+    url(r'^check_location/$', 'inventory.views.check_location'),
 )

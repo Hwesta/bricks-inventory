@@ -2,6 +2,28 @@
 
 {% block h1 %}Add Inventory{% endblock %}
 
+{% block header %}
+<script type="text/javascript">
+function check_location(partid) {
+  $.getJSON("/check_location/", { part_id: partid },
+    function(json)
+    {
+      $("#other_locations").empty();
+      $.each(json, function(index, item)
+        {
+          var string = "<li>"+item.amount+" pieces of "+item.inventory.color+" "+item.inventory.part_id+" ("+item.inventory.part_name+") in "+item.location.name+"</li>"
+          $("#other_locations").append(string);
+        });
+    });
+}
+function addClickHandlers() {
+  $("#check").click( function() { check_location("x70") } );
+}
+$(document).ready(addClickHandlers);
+</script>
+{% endblock %}
+
+
 {% block content %}
 
 <div id="form_container">
@@ -10,6 +32,8 @@
         <fieldset>
             <legend>General Info</legend>
             {{ inventory_form.as_p }}
+            <b><span id="check">Check for others</a></b>
+            <ul id="other_locations"></ul>
         </fieldset>
         <fieldset>
             <legend>Location</legend>
