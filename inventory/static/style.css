@@ -43,6 +43,21 @@ td {
     padding: 0px .5em;
 }
 
+section {
+  border: 1px solid #aaaaaa;
+  margin-bottom: 1em;
+}
+
+section > legend {
+  top: -.75em;
+  left: .75em;
+  position: relative;
+  display: inline;
+  padding: 0 .4em;
+  background-color: #ffffff;
+  border: 1px solid #f00;
+}
+
 /* Layout */
 #header {
     width: 99%;
