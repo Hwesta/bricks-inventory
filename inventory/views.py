@@ -2,6 +2,7 @@
 from django.contrib import messages
 from django.core import serializers
 from django.core.urlresolvers import reverse
+from django.db.models import Sum
 from django.forms.models import modelformset_factory
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
@@ -55,7 +56,10 @@ def add_inventory(request):
             instances = kw_formset.save(commit = False)
             map(add_inventory_to_formset, instances)
 
-            return HttpResponseRedirect(reverse(index))
+            if 'add_another' in request.POST:
+                return HttpResponseRedirect(reverse(add_inventory))
+            else:
+                return HttpResponseRedirect(reverse(index))
     else:
         inventory_form = InventoryForm(prefix="inv")
         location_formset = LocationFormSet(prefix = "loc",
@@ -135,8 +139,16 @@ def view_inventory(request):
     return render(request, 'view_inventory.html',
         {'items': items})
 
-def view_inventory_item(request, inventory_id):
-    inventory = Inventory.objects.get(pk=inventory_id)
+def view_inventory_item(request, part_id):
+    try:
+        part = Part.objects.get(part_id=part_id)
+        items = Inventory.objects.filter(partinstance__part__part_id=part_id).filter(deleted=False)
+        items = items.annotate(total_amount=Sum('locationamount__amount'))
+    except Part.DoesNotExist:
+        print "exception"
+        part = None
+        items = None
 
     return render(request, 'view_inventory_item.html',
-        {'inventory': inventory,})
+        {'part': part,
+         'items': items,})
