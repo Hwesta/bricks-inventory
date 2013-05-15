@@ -5,7 +5,7 @@
 {% block header %}
 <script type="text/javascript">
 function check_location(partid, color) {
-  $.getJSON("/check_location/", { part_id: partid, color: color },
+	$.getJSON("{% url inventory.views.check_location %}", { part_id: partid, color: color },
     function(json)
     {
       $("#other_locations").empty();
