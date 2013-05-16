@@ -56,7 +56,10 @@ def add_inventory(request):
             instances = kw_formset.save(commit = False)
             map(add_inventory_to_formset, instances)
 
-            return HttpResponseRedirect(reverse(index))
+            if 'add_another' in request.POST:
+                return HttpResponseRedirect(reverse(add_inventory))
+            else:
+                return HttpResponseRedirect(reverse(index))
     else:
         inventory_form = InventoryForm(prefix="inv")
         location_formset = LocationFormSet(prefix = "loc",
