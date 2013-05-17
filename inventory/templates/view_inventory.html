@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load url from future %}
 
 {% block h1 %}View Inventory{% endblock %}
 
@@ -6,15 +7,19 @@
 
 <table>
   <tr>
-    <th>Part</th>
+    <th>Part ID</th>
+    <th>Part Name</th>
     <th>Color</th>
     <th>Amount</th>
+    <th>Location</th>
   </tr>
 {% for i in items %}
   <tr>
-    <td><a href="{% url inventory.views.view_inventory_item i.id %}">{{ i.partinstance.part }}</a></td>
+    <td><a href="{% url "inventory.views.view_inventory_item" i.partinstance.part.part_id %}">{{ i.partinstance.part.part_id }}</a></td>
+    <td><a href="{% url "inventory.views.view_inventory_item" i.partinstance.part.part_id %}">{{ i.partinstance.part.name }}</a></td>
     <td>{{ i.partinstance.color }}</td>
-    <td></td>
+    <td>{{ i.amount }}</td>
+    <td>{% for l in i.locations %} {{ l }}<br /> {% endfor %}</td>
   </tr>
 {% endfor %}
 </table>

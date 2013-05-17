@@ -1,11 +1,12 @@
 {% extends "base.html" %}
+{% load url from future %}
 
 {% block h1 %}Add Keyword{% endblock %}
 
 {% block content %}
 
 <div id="form_container">
-    <form action="{% url inventory.views.add_keyword %}" method="post">
+    <form action="{% url "inventory.views.add_keyword" %}" method="post">
         {% csrf_token %}
         <p>{{ keyword_form.as_p }}</p>
         <p>

@@ -1,9 +1,13 @@
 {% extends "base.html" %}
+{% load url from future %}
 
 {% block h1 %}INDEX YAY!{% endblock %}
 
-{% block subbreadcrumbs %}
-<li><a href="{% url inventory.views.add_inventory %}">Add Inventory</a></li>
-<li><a href="{% url inventory.views.add_location %}">Add Location</a></li>
-<li><a href="{% url inventory.views.add_keyword %}">Add Keyword</a></li>
+{% block content %}
+<ul>
+<li><a href="{% url "inventory.views.view_inventory" %}">View Inventory</a></li>
+<li><a href="{% url "inventory.views.add_inventory" %}">Add Inventory</a></li>
+<li><a href="{% url "inventory.views.add_location" %}">Add Location</a></li>
+<li><a href="{% url "inventory.views.add_keyword" %}">Add Keyword</a></li>
+</ul>
 {% endblock %}

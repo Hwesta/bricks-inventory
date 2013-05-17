@@ -1,11 +1,12 @@
 {% extends "base.html" %}
+{% load url from future %}
 
 {% block h1 %}Add Location{% endblock %}
 
 {% block content %}
 
 <div id="form_container">
-    <form action="{% url inventory.views.add_location %}" method="post">
+    <form action="{% url "inventory.views.add_location" %}" method="post">
         {% csrf_token %}
         {{ location_form.non_field_errors }}
         {{ location_form.name.errors }}

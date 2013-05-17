@@ -1,4 +1,6 @@
 {% load form_display %}
+{% load url from future %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +24,7 @@
 {% if user.is_authenticated %}
     <ul>
     {% block breadcrumbs %}
-        <li><a href="{% url inventory.views.index %}">Home</a></li>
+        <li><a href="{% url "inventory.views.index" %}">Home</a></li>
         {% block subbreadcrumbs %}
         {% endblock subbreadcrumbs %}
     {% endblock breadcrumbs%}
