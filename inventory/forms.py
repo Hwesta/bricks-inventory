@@ -2,6 +2,7 @@ from django import forms
 from django.forms import ModelForm
 from inventory.models import Part, Category, Color, PartInstance, Set
 from inventory.models import Inventory, Location, LocationAmount, Keyword, KeywordValue
+from django.db.models import Count
 
 
 # Form should enter:
@@ -12,10 +13,17 @@ from inventory.models import Inventory, Location, LocationAmount, Keyword, Keywo
 # Location
 #   create new as needed (this is in, this is in...)
 # Keywords
+
+class CustomModelChoiceField(forms.ModelChoiceField):
+    def label_from_instance(self, obj):
+        return Color.objects.get(color_id=obj['color_id'])
+
 class InventoryForm(forms.Form):
     part = forms.CharField()
-    color = forms.ModelChoiceField(queryset=Color.objects.all())
-
+    
+    sorted_color=PartInstance.objects.values('color_id').annotate(color_count=Count('color')).order_by('-color_count')
+    color=CustomModelChoiceField(queryset=sorted_color)
+ 
     def clean_part(self):
         data = self.cleaned_data['part']
         try:
