@@ -1,5 +1,6 @@
 from django import forms
 from django.forms import ModelForm
+from django.forms.models import BaseModelFormSet
 from inventory.models import Part, Category, Color, PartInstance, Set
 from inventory.models import Inventory, Location, LocationAmount, Keyword, KeywordValue
 from django.db.models import Count
@@ -41,3 +42,8 @@ class KeywordForm(forms.ModelForm):
     class Meta:
         model = Keyword
         fields = ('name',)
+
+class RequiredFormSet(BaseModelFormSet):
+    def __init__(self, *args, **kwargs):
+        super(RequiredFormSet, self).__init__(*args, **kwargs)
+        self.forms[0].empty_permitted = False

@@ -9,7 +9,7 @@ from django.shortcuts import render
 from django.utils import simplejson
 
 # From Inventory
-from inventory.forms import InventoryForm, LocationForm, KeywordForm
+from inventory.forms import InventoryForm, LocationForm, KeywordForm, RequiredFormSet
 from inventory.models import Part, Category, Color, PartInstance, Set
 from inventory.models import Inventory, Location, LocationAmount, Keyword, KeywordValue
 
@@ -20,7 +20,8 @@ def add_inventory(request):
     """ Adds a piece of inventory. """
     LocationFormSet = modelformset_factory(LocationAmount,
         fields = ('location', 'amount'),
-        extra=3)
+        extra=3,
+        formset=RequiredFormSet)
     KeywordFormSet = modelformset_factory(KeywordValue,
         fields = ('keyword', 'value'),
         extra = Keyword.objects.count())
