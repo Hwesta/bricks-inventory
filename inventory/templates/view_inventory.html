@@ -21,6 +21,8 @@
     <td>{{ i.amount }}</td>
     <td>{% for l in i.locations %} {{ l }}<br /> {% endfor %}</td>
   </tr>
+{% empty %}
+<tr><td spanwidth='5'>You have no items.</td></tr>
 {% endfor %}
 </table>
 
