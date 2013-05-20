@@ -21,8 +21,8 @@ class CustomModelChoiceField(forms.ModelChoiceField):
 class InventoryForm(forms.Form):
     part = forms.CharField()
     
-    sorted_color=PartInstance.objects.values('color_id').annotate(color_count=Count('color')).order_by('-color_count')
-    color=CustomModelChoiceField(queryset=sorted_color)
+    sorted_color = Color.objects.extra(select={'color_count':'SELECT COUNT(color_id) FROM inventory_partinstance WHERE inventory_partinstance.color_id=inventory_color.color_id'}).order_by('-color_count')
+    color = forms.ModelChoiceField(queryset=sorted_color)
  
     def clean_part(self):
         data = self.cleaned_data['part']
