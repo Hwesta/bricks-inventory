@@ -135,14 +135,22 @@ def add_keyword(request):
         })
 
 def view_inventory(request):
-    items = Inventory.objects.filter(deleted=False)
+    # Group by part instance, annotate with count of items
+    items = Inventory.objects.filter(deleted=False).values('partinstance').annotate(amount=Sum('locationamount__amount'))
+
+    # Convert foreign key back to the object
+    def foreign_key_to_object(d):
+        d['partinstance'] = PartInstance.objects.get(pk=d['partinstance'])
+        return d
+    items = map(foreign_key_to_object, items)
+
     return render(request, 'view_inventory.html',
         {'items': items})
 
 def view_inventory_item(request, part_id):
     try:
         part = Part.objects.get(part_id=part_id)
-        items = Inventory.objects.filter(partinstance__part__part_id=part_id).filter(deleted=False)
+        items = Inventory.objects.filter(partinstance__part=part).filter(deleted=False)
         items = items.annotate(total_amount=Sum('locationamount__amount'))
     except Part.DoesNotExist:
         print "exception"
