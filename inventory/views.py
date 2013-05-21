@@ -42,9 +42,7 @@ def add_inventory(request):
                 print "PartInstance not exist, creating"
                 partinstance = PartInstance(color=color, part=part, user_override=True)
                 partinstance.save()
-            print "partinstance", partinstance
             inventory = Inventory(partinstance = partinstance)
-            print "inventory", inventory
             inventory.save()
 
             def add_inventory_to_formset(i):
@@ -54,8 +52,18 @@ def add_inventory(request):
             instances = location_formset.save(commit = False)
             map(add_inventory_to_formset, instances)
 
+            previous_keywords = []
+            def process_kw_formset(i):
+                # Add the inventory to each item and save it
+                i.inventory = inventory
+                i.save()
+                # Save the keyword and value for populating next time
+                d = {'keyword': i.keyword.pk, 'value': i.value}
+                previous_keywords.append(d)
+
             instances = kw_formset.save(commit = False)
-            map(add_inventory_to_formset, instances)
+            map(process_kw_formset, instances)
+            request.session['previous_keywords'] = previous_keywords
 
             if 'add_another' in request.POST:
                 return redirect(add_inventory)
@@ -65,8 +73,18 @@ def add_inventory(request):
         inventory_form = InventoryForm(prefix="inv")
         location_formset = LocationFormSet(prefix = "loc",
             queryset = LocationAmount.objects.none())
-        kw_formset = KeywordFormSet(prefix="kw",
-            queryset=Keyword.objects.none())
+
+        if 'previous_keywords' in request.session:
+            # Use keywords from previous form, if they exist
+            previous_keywords = request.session['previous_keywords']
+            del request.session['previous_keywords']
+            kw_formset = KeywordFormSet(prefix="kw",
+                queryset=Keyword.objects.none(),
+                initial=previous_keywords)
+        else:
+            kw_formset = KeywordFormSet(prefix="kw",
+                queryset=Keyword.objects.none())
+
     return render(request, 'add_inventory.html',
         {'inventory_form': inventory_form,
          'location_formset': location_formset,
