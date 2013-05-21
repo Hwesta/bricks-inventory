@@ -4,8 +4,8 @@ from django.core import serializers
 from django.core.urlresolvers import reverse
 from django.db.models import Sum
 from django.forms.models import modelformset_factory
-from django.http import HttpResponseRedirect, HttpResponse
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
 from django.utils import simplejson
 
 # From Inventory
@@ -58,9 +58,9 @@ def add_inventory(request):
             map(add_inventory_to_formset, instances)
 
             if 'add_another' in request.POST:
-                return HttpResponseRedirect(reverse(add_inventory))
+                return redirect(add_inventory)
             else:
-                return HttpResponseRedirect(reverse(index))
+                return redirect(index)
     else:
         inventory_form = InventoryForm(prefix="inv")
         location_formset = LocationFormSet(prefix = "loc",
@@ -109,9 +109,9 @@ def add_location(request):
             new_loc = location_form.save()
             messages.success(request, "%s added." % new_loc.name)
             if 'add_another' in request.POST:
-                return HttpResponseRedirect(reverse(add_location))
+                return redirect(add_location)
             else:
-                return HttpResponseRedirect(reverse(index))
+                return redirect(index)
     else:
         location_form = LocationForm()
     return render(request, 'add_location.html',
@@ -126,9 +126,9 @@ def add_keyword(request):
             new_kw = keyword_form.save()
             messages.success(request, "Keyword %s added." % new_kw.name)
             if 'add_another' in request.POST:
-                return HttpResponseRedirect(reverse(add_keyword))
+                return redirect(add_keyword)
             else:
-                return HttpResponseRedirect(reverse(index))
+                return redirect(index)
     else:
         keyword_form = KeywordForm()
     return render(request, 'add_keyword.html',

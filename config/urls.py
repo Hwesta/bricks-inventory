@@ -15,9 +15,9 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'inventory.views.index'),
-    url(r'^add/inventory/', 'inventory.views.add_inventory'),
-    url(r'^add/location/', 'inventory.views.add_location'),
-    url(r'^add/keyword/', 'inventory.views.add_keyword'),
+    url(r'^add/inventory/$', 'inventory.views.add_inventory'),
+    url(r'^add/location/$', 'inventory.views.add_location'),
+    url(r'^add/keyword/$', 'inventory.views.add_keyword'),
 
     url(r'^inventory/$', 'inventory.views.view_inventory'),
     url(r'^inventory/(\w+)/$', 'inventory.views.view_inventory_item'),
