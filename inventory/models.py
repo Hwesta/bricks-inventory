@@ -75,11 +75,13 @@ class LocationAmount(models.Model):
     inventory = models.ForeignKey('Inventory')
     location = models.ForeignKey('Location')
     amount = models.IntegerField()
+    added = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
         return unicode(self.amount) \
              + " pieces of " + unicode(self.inventory.partinstance) \
-             + " in " + unicode(self.location)
+             + " in " + unicode(self.location) \
+             + " on " + unicode(self.added)
 
 class Keyword(models.Model):
     name = models.CharField(max_length=256)
