@@ -162,9 +162,12 @@ def view_inventory(request):
         d['partinstance'] = PartInstance.objects.get(pk=d['partinstance'])
         return d
     items = map(foreign_key_to_object, items)
-
+    total = LocationAmount.objects.aggregate(total_count=Sum('amount'))
+    total = total['total_count']
+    
     return render(request, 'view_inventory.html',
-        {'items': items})
+        {'items': items,
+        'total': total,})
 
 def view_inventory_item(request, part_id):
     try:
