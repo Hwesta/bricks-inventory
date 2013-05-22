@@ -165,9 +165,16 @@ def view_inventory(request):
     total = LocationAmount.objects.aggregate(total_count=Sum('amount'))
     total = total['total_count']
     
+    #Gets a count of the distinct number of parts in the inventory for stats purposes.
+    distinct_parts = Inventory.objects.prefetch_related().values('partinstance__part').distinct()
+    #I'm not sure if this count is needed, but I couldn't figure out how to do an aggregation with it.
+    distinct_parts = distinct_parts.count()
+    
+    
     return render(request, 'view_inventory.html',
         {'items': items,
-        'total': total,})
+        'total': total,
+        'distinct': distinct_parts})
 
 def view_inventory_item(request, part_id):
     try:
