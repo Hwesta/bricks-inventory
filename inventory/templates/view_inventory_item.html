@@ -12,7 +12,8 @@
         <h2>Locations</h2>
         {% for l in i.locationamount_set.all %}
         <p>{{ l.amount }} pieces in {{ l.location }}</p>
-        <p>Added on: {{l.added}}</p>
+		{% load tz %}
+		<p>Added on: {{l.added|localtime}}</p>
         {% endfor %}
 
         <h2>Keywords</h2>
