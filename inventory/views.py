@@ -162,11 +162,11 @@ def view_inventory(request):
         d['partinstance'] = PartInstance.objects.get(pk=d['partinstance'])
         return d
     items = map(foreign_key_to_object, items)
-    total = LocationAmount.objects.aggregate(total_count=Sum('amount'))
+    total = LocationAmount.objects.filter(inventory__deleted=False).aggregate(total_count=Sum('amount'))
     total = total['total_count']
     
     #Gets a count of the distinct number of parts in the inventory for stats purposes.
-    distinct_parts = Inventory.objects.prefetch_related().values('partinstance__part').distinct()
+    distinct_parts = Inventory.objects.filter(deleted=False).prefetch_related().values('partinstance__part').distinct()
     #I'm not sure if this count is needed, but I couldn't figure out how to do an aggregation with it.
     distinct_parts = distinct_parts.count()
     
