@@ -1,4 +1,6 @@
-from django.db import models
+from django.core.exceptions import ValidationError
+from django.core.validators import MinValueValidator
+from django.db import models 
 
 # "Reference" tables
 class Part(models.Model):
@@ -74,7 +76,7 @@ class Location(models.Model):
 class LocationAmount(models.Model):
     inventory = models.ForeignKey('Inventory')
     location = models.ForeignKey('Location')
-    amount = models.IntegerField()
+    amount = models.IntegerField(validators=[MinValueValidator(1)])
     added = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
