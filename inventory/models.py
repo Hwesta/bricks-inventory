@@ -1,19 +1,20 @@
-from django.core.exceptions import ValidationError
 from django.core.validators import MinValueValidator
-from django.db import models 
+from django.db import models
+
 
 # "Reference" tables
 class Part(models.Model):
-    part_id = models.CharField(max_length=32, unique=True) # lego product code
-    name = models.CharField(max_length=256) # descriptive name
-    category = models.ForeignKey('Category', to_field='category_id') # eg brick, minifig head
-    weight = models.FloatField(null=True, blank=True) 
+    part_id = models.CharField(max_length=32, unique=True, help_text='"Bricks" product code')
+    name = models.CharField(max_length=256, help_text="Descriptive name")
+    category = models.ForeignKey('Category', to_field='category_id', help_text='e.g. brick, plate, etc')
+    weight = models.FloatField(null=True, blank=True)
     x_dimension = models.FloatField(null=True, blank=True)
     y_dimension = models.FloatField(null=True, blank=True)
     z_dimension = models.FloatField(null=True, blank=True)
 
     def __unicode__(self):
-        return self.part_id+"-"+self.name
+        return u'{}-{}'.format(self.part_id, self.name)
+
 
 class Category(models.Model):
     # need way to populate this automatically based on what things are referenced
@@ -23,12 +24,13 @@ class Category(models.Model):
     name = models.CharField(max_length=200)
 
     def __unicode__(self):
-        return unicode(self.category_id)+"-"+self.name
+        return u'{}-{}'.format(self.category_id, self.name)
+
 
 class Color(models.Model):
     color_id = models.IntegerField(unique=True)
     name = models.CharField(max_length=200)
-    rgb = models.CharField(max_length=6) # should be hex rgb value
+    rgb = models.CharField(max_length=6, help_text='Hex RGB value')
     color_type = models.CharField(max_length=64)
     year_from = models.IntegerField(null=True, blank=True)
     year_to = models.IntegerField(null=True, blank=True)
@@ -36,42 +38,49 @@ class Color(models.Model):
     def __unicode__(self):
         return self.name
 
-# Do we need this?  Just have Inventory link to a Color and Part
-class PartInstance(models.Model): # existant part in specific color aka Code
+
+# TODO Do we need this?  Just have Inventory link to a Color and Part
+class PartInstance(models.Model):
+    """ existant part in specific color aka Code """
     color = models.ForeignKey('Color', to_field='color_id')
     part = models.ForeignKey('Part', to_field='part_id')
 #    codename = models.CharField(max_length=255)
-    user_override = models.BooleanField(default=False) # for if the user wants to enter something we don't have stored
+    user_override = models.BooleanField(default=False)  # for if the user wants to enter something we don't have stored
+    # image?
 
     def __unicode__(self):
-        return unicode(self.part)+" ("+self.color.name+")"
-    
+        return u'{} ({})'.format(self.part, self.color.name)
+
+
 class Set(models.Model):
     # TODO stores (PartInstance, number in set) in some form - JSON??
     set_id = models.CharField(max_length=32)
     name = models.CharField(max_length=256)
     year = models.IntegerField()
-    
+
     def __unicode__(self):
-        return self.set_id+"-"+self.name
+        return u'{}-{}'.format(self.set_id, self.name)
+
 
 # Actual inventory tables
-    
+
 class Inventory(models.Model):
     partinstance = models.ForeignKey('PartInstance')
-    location = models.ManyToManyField('Location', through = "LocationAmount")
+    location = models.ManyToManyField('Location', through="LocationAmount")
     keywords = models.ManyToManyField('Keyword', through='KeywordValue')
     deleted = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return unicode(self.partinstance) + " tracker"
+        return u'{} tracker'.format(self.partinstance)
+
 
 class Location(models.Model):
     name = models.CharField(max_length=256)
     parent = models.ForeignKey('self', null=True, blank=True)
 
     def __unicode__(self):
-        return self.name;
+        return self.name
+
 
 class LocationAmount(models.Model):
     inventory = models.ForeignKey('Inventory')
@@ -80,16 +89,15 @@ class LocationAmount(models.Model):
     added = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
-        return unicode(self.amount) \
-             + " pieces of " + unicode(self.inventory.partinstance) \
-             + " in " + unicode(self.location) \
-             + " on " + unicode(self.added)
+        return u'{amount} pieces of {} in {} on {}'.format(self.amount, self.inventory.partinstance, self.location, self.added)
+
 
 class Keyword(models.Model):
     name = models.CharField(max_length=256)
 
     def __unicode__(self):
         return self.name
+
 
 class KeywordValue(models.Model):
     inventory = models.ForeignKey('Inventory')
@@ -98,4 +106,4 @@ class KeywordValue(models.Model):
     deleted = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return "%s %s %s" % (self.inventory, self.keyword, self.value)
+        return "{} {} {}".format(self.inventory, self.keyword, self.value)
